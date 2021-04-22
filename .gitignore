@@ -4,5 +4,5 @@ test.cfg
 *.py.bak*
 __pycache__
 *.pyc
-by_dataset_input/
+test/data/
 *.tmp

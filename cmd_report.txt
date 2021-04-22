@@ -1,0 +1,1 @@
+firefox test_local/workdir/tmp/*/report.html &

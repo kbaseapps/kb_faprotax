@@ -1,4 +1,4 @@
-TARGET_TESTS = AmpliconMatrix_test.py # test_mod.py::TestClass::test_method
+TARGET_TESTS = . # test_mod.py::TestClass::test_method
 SERVICE = kb_faprotax
 SERVICE_CAPS = kb_faprotax
 SPEC_FILE = kb_faprotax.spec

@@ -16,15 +16,6 @@ from installed_clients.WorkspaceClient import Workspace
 
 from kb_faprotax.kb_faprotaxImpl import kb_faprotax 
 
-__all__ = [
-    'shared_folder',
-    'get_ws',
-    'get_serviceImpl',
-    'ctx',
-    'BaseTest',
-    'do_patch',
-]
-
 
 ######################################
 ######################################

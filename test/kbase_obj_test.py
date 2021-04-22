@@ -18,7 +18,7 @@ def test_AmpliconMatrix_methods():
 
     # use as cm since patch.dict decs interfering with e/o for some reason
     with patch.dict('kb_faprotax.util.kbase_obj.Var', values={
-                    'tmp': 'test_AmpMat_methods', 'dfu': get_mock_dfu('enigma50by30')}):
+                    'tmp': 'test_AmpMat_methods', 'dfu': mock_dfu}):
         amp_mat = AmpliconMatrix(enigma50by30)
         row_attr_map = AttributeMapping(enigma50by30_rowAttrMap, amp_mat)
 
@@ -30,7 +30,7 @@ def test_AmpliconMatrix_methods():
 
     # superficially test `to_OTU_table`
     df1 = pd.read_csv(
-        os.path.join(testData_dir, 'by_dataset_input/enigma50by30/return/otu_table.tsv'), 
+        os.path.join(TEST_DATA_DIR, 'return/enigma50by30/return/otu_table.tsv'), 
         sep='\t', index_col='taxonomy') 
     df2 = amp_mat.to_OTU_table(tax_l)
 
@@ -53,7 +53,7 @@ def test_AttributeMapping_methods():
 
     # use as cm since patch.dict decs interfering with e/o for some reason
     with patch.dict('kb_faprotax.util.kbase_obj.Var', values={
-                    'tmp': 'AttrMap_methods', 'dfu': get_mock_dfu('dummy10by8')}):
+                    'tmp': 'AttrMap_methods', 'dfu': mock_dfu}):
         amp_mat = AmpliconMatrix(dummy10by8)
         row_attr_map = AttributeMapping(dummy10by8_rowAttrMap, amp_mat)
         row_attr_map_orig = AttributeMapping(dummy10by8_rowAttrMap, amp_mat)
@@ -97,7 +97,7 @@ def test_AmpliconMatrix_validation():
 
     # use as cm since patch.dict decs interfering with e/o for some reason
     with patch.dict('kb_faprotax.util.kbase_obj.Var', values={
-                    'tmp': 'AmpMat_validation', 'dfu': get_mock_dfu('dummy10by8')}):
+                    'tmp': 'AmpMat_validation', 'dfu': mock_dfu}):
         amp_mat = AmpliconMatrix(dummy10by8)
 
     

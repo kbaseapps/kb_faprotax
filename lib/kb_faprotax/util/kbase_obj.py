@@ -316,8 +316,6 @@ class GenomeSet:
 
         # check for duplicate upas
         upa_l = [genome_element[0] for genome_element in genome_element_l if genome_element[0] != None]
-        if len(set(upa_l)) < len(upa_l):
-            Var.warnings.append(msg_dupGenomes)
 
         # sort out which Genomes came as upas, which came as data
         ind_upa = [i for i in range(len(genome_element_l)) if genome_element_l[i][0] != None]
