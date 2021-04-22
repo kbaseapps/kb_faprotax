@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "data": {
+        "attributes": [
+          {
+            "attribute": "celestial body",
+            "source": "upload"
+          },
+          {
+            "attribute": "biome",
+            "source": "upload"
+          }
+        ],
+        "instances": {
+          "amplicon_id_0": [
+            "Ganymede",
+            "coral reef"
+          ],
+          "amplicon_id_1": [
+            "Mars",
+            "rainforest"
+          ],
+          "amplicon_id_2": [
+            "Saturn",
+            "chaparral"
+          ],
+          "amplicon_id_3": [
+            "Phoebe",
+            "tundra"
+          ],
+          "amplicon_id_4": [
+            "Pluto",
+            "temperate forest"
+          ],
+          "amplicon_id_5": [
+            "2020 CD3",
+            "abyssal zone"
+          ],
+          "amplicon_id_6": [
+            "Io",
+            "savanna"
+          ],
+          "amplicon_id_7": [
+            "Ceres",
+            "estuary"
+          ],
+          "amplicon_id_8": [
+            "sun",
+            "taiga"
+          ],
+          "amplicon_id_9": [
+            "moon",
+            "pelagic zone"
+          ]
+        }
+      },
+      "info": [
+        -1,
+        "AttributeMapping_dummy_name",
+        "KBaseDummy.AttributeMapping-1.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+# Group definitions relevant to input table '/kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/otu_table.tsv'
+# Generated on: 2020.10.11 18:54:30
+# Used command:
+#   /opt/FAPROTAX_1.2.1/collapse_table.py --input_table /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/otu_table.tsv --input_groups_file /kb/module/data/FAPROTAX.txt --out_collapsed /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/collapsed_func_table.tsv --out_report /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/report.txt --out_sub_tables_dir /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/sub_tables --out_groups2records_table /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/groups2records.tsv --out_groups2records_table_dense /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/groups2records_dense.tsv --out_group_overlaps /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/group_overlaps.tsv --out_group_definitions_used /kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/group_definitions_used.txt --row_names_are_in_column taxonomy --omit_columns 1 --verbose
+#
+# Summary:
+#   Loaded 90 groups comprising 8236 members (4983 unique members)
+#   Established 9185 assignments of records to groups
+#   13773 out of 17770 records could not be assigned to any group (leftovers)
+#   Number of groups represented: 75
+#
+methanotrophy
+# - - - - - - - 
+*Methylococcaceae*									# DOI:10.1007/0-387-30745-1_15
+*Methylocystaceae*									# DOI:10.1007/0-387-30745-1_15
+*Methylocystis*										# DOI:10.1099/ijs.0.64541-0  and  Falkow (2006) - The Prokaryotes: A Handbook on the Biology of Bacteria, Volume 5, chapter 3.1.14, ISBN: 9780387254951
+*Methylomirabilis*									# DOI:10.1128/JB.05816-11
+*Methylomonas*										# Goldberg and Rokem (2013) - Biology of Methylotrophs, ISBN: 9781483100418
+*Methylomicrobium*									# Falkow (2006) - The Prokaryotes: A Handbook on the Biology of Bacteria, Volume 5, chapter 3.1.14, ISBN: 9780387254951
+*Methylocaldum*										# Falkow (2006) - The Prokaryotes: A Handbook on the Biology of Bacteria, Volume 5, chapter 3.1.14, ISBN: 9780387254951
+*Methylogaea*										# DOI:10.1111/1462-2920.12149
+*Methylovulum*										# DOI:10.1099/mic.0.036061-0
+*Methylosarcina*									# Schmidt (2012) - Topics in Ecological and Environmental Microbiology, ISBN: 9780123838797
+*Crenothrix*										# Schmidt (2012) - Topics in Ecological and Environmental Microbiology, part II, Metabolism and Behavior of Diverse Microbes, ISBN: 9780123838797
+*Methylomirabilis*oxyfera*							# DOI:10.1128/AEM.02099-12
+*Methyloferula*										# DOI:10.1099/ijs.0.028118-0  and  DOI:10.1111/1462-2920.12149
+*Methylobacter*										# Falkow (2006) - The Prokaryotes: A Handbook on the Biology of Bacteria, Volume 5, chapter 3.1.14, ISBN: 9780387254951
+*Methylomonas*										# Falkow (2006) - The Prokaryotes: A Handbook on the Biology of Bacteria, Volume 5, chapter 3.1.14, ISBN: 9780387254951
+*Methyloglobulus*morosus*							# DOI:10.1016/j.syapm.2014.02.001
+*Gammaproteobacteria*Methylococcales*				# DOI:10.1007/0-387-28022-7_7  and  DOI:10.1371/journal.pone.0072627
+
+
+acetoclastic_methanogenesis
+# - - - - - - - - - - - - - - 
+*Methanosarcinales*Methanosaetaceae*				# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1;  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 12, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+
+
+methanogenesis_by_disproportionation_of_methyl_groups
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+*Methanosarcinales*Methanosarcinaceae*				# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1;  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 12, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+
+
+methanogenesis_using_formate
+# - - - - - - - - - - - - - - - 
+
+
+methanogenesis_by_CO2_reduction_with_H2
+# - - - - - - - - - - - - - - - - - - - - 
+*Methanomicrobiales*								# Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 10, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+*Methanobacteriaceae*Methanobacterium*				# Garcia (1990) - Taxonomy and ecology of methanogens  and  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 11, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+*Methanobacteriaceae*Methanobrevibacter*			# Garcia (1990) - Taxonomy and ecology of methanogens  and  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 11, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+*Methanosarcinaceae*Methanosarcina*					# Bergey's Manual of Systematics of Archaea and Bacteria (2015). Domain: Archaea
+
+
+methanogenesis_by_reduction_of_methyl_compounds_with_H2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+*Thermoplasmata*Methanomassiliicoccales*			# DOI:10.1093/gbe/evt128  and  DOI:10.1186/1471-2164-15-679
+
+
+hydrogenotrophic_methanogenesis
+# - - - - - - - - - - - - - - - - 
+add_group:methanogenesis_by_CO2_reduction_with_H2
+add_group:methanogenesis_by_reduction_of_methyl_compounds_with_H2
+*Methanobacteriales*								# Garcia (1990) - Taxonomy and ecology of methanogens  and  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 11, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+*Archaea*Methanomassiliicoccales*					# DOI:10.1093/gbe/evt128  and  DOI:10.1128/AEM.03389-14
+*Methanobacteriales*Methanobacteriaceae*			# Bergey's Manual of Systematics of Archaea and Bacteria (2015). Domain: Archaea
+
+
+methanogenesis
+# - - - - - - - - 
+add_group:hydrogenotrophic_methanogenesis
+add_group:methanogenesis_by_disproportionation_of_methyl_groups
+add_group:acetoclastic_methanogenesis
+add_group:methanogenesis_using_formate
+add_group:methanogenesis_by_CO2_reduction_with_H2
+add_group:methanogenesis_by_reduction_of_methyl_compounds_with_H2
+*Methanosarcinales*									# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1;  Dworkin and Falkow (2006) - The Prokaryotes: Vol. 3: Archaea. Bacteria: Firmicutes, Actinomycetes, chapter 12, ISBN: 9780387254937, DOI:10.1007/0-387-30743-5_12
+
+
+methanol_oxidation
+# - - - - - - - - - - 
+*Aquaspirillaceae*Microvirgula*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Methylophilaceae*									# DOI:10.1128/JB.00404-11
+*Methylophilus*										# Goldberg and Rokem (2013) - Biology of Methylotrophs, ISBN: 9781483100418
+*Methylobacillus*									# Goldberg and Rokem (2013) - Biology of Methylotrophs, ISBN: 9781483100418
+*Rhizobiales*Methylobacterium*						# Goldberg and Rokem (2013) - Biology of Methylotrophs, ISBN: 9781483100418
+*Rhodobacteraceae*Paracoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Methyloglobulus*morosus*							# DOI:10.1016/j.syapm.2014.02.001
+
+
+methylotrophy
+# - - - - - - - 
+add_group:methanol_oxidation
+add_group:methanotrophy
+*Methanomassiliicoccales*							# DOI:10.1093/gbe/evt128
+*Thermoplasmata*Methanomassiliicoccales*			# DOI:10.1093/gbe/evt128  and  DOI:10.1186/1471-2164-15-679
+
+
+aerobic_ammonia_oxidation
+# - - - - - - - - - - - - - 
+*Betaproteobacteriales*Nitrosomonadaceae*			# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Nitrosoarchaeum*limnia*							# DOI:10.1128/AEM.01960-12
+*Thaumarchaeota*Nitrososphaera*						# DOI:10.1111/j.1462-2920.2011.02666.x
+*Thaumarchaeota*Nitrosotalea*						# DOI:10.1073/pnas.1107196108  and  DOI:10.1111/j.1462-2920.2011.02666.x  and  DOI:10.1111/1462-2920.13971 
+*Nitrosoarchaeum*limnia*							# DOI:10.1128/JB.00007-12
+*Nitrososphaerales*Nitrososphaeraceae*				# DOI: 10.1099/ijs.0.063172-0
+
+
+aerobic_nitrite_oxidation
+# - - - - - - - - - - - - - 
+*Nitrospinaceae*Nitrospina*							# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria (Nitrospina were historically thought to belong to the Deltaproteobacteria)
+*Nitrospirae*Nitrospira*							# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Gallionellaceae*Nitrotoga*							# DOI:10.1038/ismej.2014.158
+
+
+nitrification
+# - - - - - - - 
+add_group:aerobic_ammonia_oxidation
+add_group:aerobic_nitrite_oxidation
+
+
+sulfate_respiration
+# - - - - - - - - - - 
+*Deltaproteobacteria*Desulfobacteraceae*			# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfobacterales*Desulfobacteraceae*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfobacterales*Desulfobulbaceae*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Deltaproteobacteria*Desulfarculales*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfovibrionales*Desulfovibrio*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Peptococcaceae*Desulfotomaculum*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Peptococcaceae*Desulfosporosinus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Desulfovibrionaceae*Desulfovibrio*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2;  Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfomicrobiaceae*Desulfomicrobium*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfarculales*Desulfarculaceae*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfomicrobiaceae*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfobulbaceae*Desulfobulbus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophobacteraceae*Syntrophobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophobacteraceae*Desulfovirga*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophaceae*Desulfomonile*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophaceae*Desulfobacca*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfomicrobiaceae*Desulfomicrobium*				# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Desulfosporosinus*youngiae*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Firmicutes and Tenericutes
+
+
+sulfur_respiration
+# - - - - - - - - - - 
+*Desulfuromonadaceae*Desulfuromonas*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfuromonadaceae*Desulfuromonas*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Clostridiales*Fusibacter*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+
+
+dark_sulfite_oxidation
+# - - - - - - - - - - - - 
+
+
+sulfite_respiration
+# - - - - - - - - - - 
+*Desulfomicrobium*apsheronum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfobulbaceae*Desulfobulbus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfitobacterium*RPf35Ei*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+
+
+thiosulfate_respiration
+# - - - - - - - - - - - - 
+*Alteromonadaceae*Alishewanella*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Peptococcaceae*Desulfitobacterium*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3, Firmicutes
+*Thermotogaceae*Thermotoga*							# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Firmicutes*Fusibacter*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Desulfosporosinus*youngiae*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Firmicutes and Tenericutes
+
+
+respiration_of_sulfur_compounds
+# - - - - - - - - - - - - - - - - 
+add_group:sulfite_respiration
+add_group:sulfur_respiration
+add_group:sulfate_respiration
+add_group:thiosulfate_respiration
+
+
+arsenate_detoxification
+# - - - - - - - - - - - - 
+
+
+arsenate_respiration
+# - - - - - - - - - - - 
+*Desulfurispirillum*indicum*						# DOI:10.1111/j.1574-6941.2012.01351.x  and  DOI:10.1099/ijs.0.022392-0
+
+
+dissimilatory_arsenate_reduction
+# - - - - - - - - - - - - - - - - - 
+add_group:arsenate_detoxification
+add_group:arsenate_respiration
+
+
+arsenite_oxidation_detoxification
+# - - - - - - - - - - - - - - - - - 
+
+
+arsenite_oxidation_energy_yielding
+# - - - - - - - - - - - - - - - - - - 
+
+
+dissimilatory_arsenite_oxidation
+# - - - - - - - - - - - - - - - - - 
+add_group:arsenite_oxidation_detoxification
+add_group:arsenite_oxidation_energy_yielding
+
+
+anammox
+# - - - - 
+*Brocadiaceae*Brocadia*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Brocadiaceae*Jettenia*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+
+
+nitrate_denitrification
+# - - - - - - - - - - - - 
+*Pannonibacter*phragmitetus*						# DOI:10.1099/ijs.0.02356-0
+*Rhodocyclaceae*Zoogloea*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Aquaspirillaceae*Microvirgula*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodobacteraceae*Paracoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Rhodoplanes*							# DOI:10.1099/00207713-44-4-665  and  Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+
+
+nitrite_denitrification
+# - - - - - - - - - - - - 
+add_group:nitrate_denitrification
+*Aquaspirillaceae*Microvirgula*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Methylomirabilis*oxyfera*							# DOI:10.1128/JB.05816-11
+
+
+nitrous_oxide_denitrification
+# - - - - - - - - - - - - - - - 
+add_group:nitrite_denitrification
+*Aquaspirillaceae*Microvirgula*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+denitrification
+# - - - - - - - - 
+add_group:nitrate_denitrification
+add_group:nitrite_denitrification
+add_group:nitrous_oxide_denitrification
+
+
+chitinolysis
+# - - - - - - - 
+*Chitinilyticum*litopenaei*							# DOI:10.1099/ijs.0.005090-0
+*Xanthomonadaceae*Lysobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+knallgas_bacteria
+# - - - - - - - - - 
+*Anaeromyxobacter*dehalogenans*						# DOI:10.1128/AEM.68.2.893–900.2002
+
+
+dark_hydrogen_oxidation
+# - - - - - - - - - - - - 
+add_group:knallgas_bacteria
+*Veillonellaceae*Sporomusa*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Xanthobacteraceae*Xanthobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Betaproteobacteriales*Hydrogenophaga*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Xanthobacter*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C, Alpha, Beta, Delta, Epsilonproteobacteria
+*Rhodobacteraceae*Paracoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Methanobacteriales*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Methanosarcinaceae*Methanosarcina*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+
+
+nitrogen_fixation
+# - - - - - - - - - 
+*Rhizobiales*Methylocystis*							# DOI:10.1099/ijs.0.043505-0
+*Methyloglobulus*morosus*							# DOI:10.1016/j.syapm.2014.02.001
+*Rhodocyclaceae*Azospira*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Herbaspirillum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Betaproteobacteriales*Derxia*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Xanthobacteraceae*Xanthobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Clostridiales*Heliobacteriaceae*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Azospirillaceae*Azospirillum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Bradyrhizobium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Magnetococcus*										# DOI:10.1007/s11104-008-9833-8
+*Cyanobacteria*Calothrix*							# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Pseudomonadaceae*Azotobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Azospira*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Azovibrio*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Magnetospirillum*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+
+
+nitrate_ammonification
+# - - - - - - - - - - - - 
+*Desulfurispirillum*indicum*						# DOI:10.1111/j.1574-6941.2012.01351.x
+*Anaeromyxobacter*dehalogenans*						# DOI:10.1128/AEM.68.2.893–900.2002
+
+
+nitrite_ammonification
+# - - - - - - - - - - - - 
+add_group:nitrate_ammonification
+
+
+nitrite_respiration
+# - - - - - - - - - - 
+add_group:nitrite_ammonification
+add_group:nitrite_denitrification
+add_group:anammox
+*Rhodocyclaceae*Thauera*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+cellulolysis
+# - - - - - - - 
+*Polyangiaceae*Sorangium*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Cytophagales*Cytophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Cytophagaceae*Cytophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidetes*Dyadobacter*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Fibrobacter*succinogenes*							# DOI:10.1007/BF00263846
+*Polyangiaceae*Sorangium*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Promicromonosporaceae*Isoptericola*				# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Polyangiaceae*Sorangium*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Paenibacillus*lautus*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Cytophagaceae*Sporocytophaga*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*FIbrobacteraceae*Fibrobacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Acidothermaceae*Acidothermus*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+xylanolysis
+# - - - - - - 
+*Fibrobacter*succinogenes*							# Matte and Forsberg (1992). Purification, characterization, and mode of action of endoxylanases 1 and 2 from Fibrobacter succinogenes S85
+*Promicromonosporaceae*Isoptericola*				# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+dark_sulfide_oxidation
+# - - - - - - - - - - - - 
+*Thiotrichaceae*Thiothrix*							# Munn (2011) - Marine Microbiology, chapter 4
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Magnetovibrio*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Alphaproteobacteria and Betaproteobacteria
+
+
+dark_sulfur_oxidation
+# - - - - - - - - - - - 
+
+
+dark_thiosulfate_oxidation
+# - - - - - - - - - - - - - - 
+*Proteobacteria*Magnetovibrio*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Alphaproteobacteria and Betaproteobacteria
+
+
+dark_oxidation_of_sulfur_compounds
+# - - - - - - - - - - - - - - - - - - 
+add_group:dark_sulfide_oxidation
+add_group:dark_sulfur_oxidation
+add_group:dark_thiosulfate_oxidation
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Bosea*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Thiovulaceae*Sulfurimonas*							# DOI:10.3389/fmicb.2015.00989
+
+
+manganese_oxidation
+# - - - - - - - - - - 
+*Acinetobacter*lwoffii*								# DOI:10.1016/j.soilbio.2007.01.004
+*Bacillales*bacterium*								# DOI:10.1016/j.soilbio.2007.01.004
+*Geodermatophilaceae*Geodermatophilus*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Proteobacteria*Leptothrix*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+manganese_respiration
+# - - - - - - - - - - - 
+*Deferribacteraceae*Deferribacter*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+
+
+ligninolysis
+# - - - - - - - 
+
+
+fermentation
+# - - - - - - - 
+*Desulfuromonadaceae*Desulfuromonas*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfobacteraceae*Desulfatirhabdium*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Desulfobacteraceae*Desulfatitalea*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Actinomycetaceae*Actinomyces*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Bifidobacteriaceae*Gardnerella*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Corynebacterium*xerosis*							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micrococcaceae*Rothia*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Cellulomonadaceae*Cellulomonas*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Bacteroidaceae*Bacteroides*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidales*Porphyromonas*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Porphyromonadaceae*Porphyromonas*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4. Legacy taxonomy
+*Bacteroidales*Paludibacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Prevotella*buccalis*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Flavobacteriales*Capnocytophaga*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Flavobacteriaceae*Capnocytophaga*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4. Legacy taxonomy
+*Flavobacteriales*Cloacibacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Dyadobacter*fermentans*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Holophagaceae*Holophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Holophagaceae*Geothrix*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Fibrobacteraceae*Fibrobacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Fusobacteriaceae*Fusobacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Leptotrichiaceae*leptotrichia*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Dictyoglomaceae*Dictyoglomus*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Verrucomicrobiaceae*Verrucomicrobium*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Opitutaceae*Opitutus*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacillaceae*Anoxybacillus*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Listeriaceae*Brochothrix*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Firmicutes*Gemella*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Lactobacillaceae*Lactobacillus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Enterococcaceae*Enterococcus*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Streptococcaceae*Streptococcus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Streptococcaceae*Lactococcus*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Clostridium*magnum*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Eubacterium*coprostanoligenes*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Peptococcaceae*Desulfosporosinus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Ruminococcaceae*Acetivibrio*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Ruminococcaceae*Faecalibacterium*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Veillonellaceae*Veillonella*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Firmicutes*Sedimentibacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Firmicutes*Acidaminobacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Firmicutes*Anaerovorax*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Firmicutes*Acetoanaerobium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Azospirillales*Skermanella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Burkholderiaceae*Lautropia*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Propionivibrio*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfobacteraceae*Desulfobacterium*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfobulbaceae*Desulfobulbus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophaceae*Syntrophus*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Syntrophaceae*Desulfomonile*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Thermotogaceae*Thermotoga*							# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Aeromonadaceae*Aeromonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Aeromonadaceae*Tolumonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Enterobacteriales*Pantoea*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Enterobacteriaceae*Pantoea*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2. Legacy taxonomy
+*Enterobacteriales*Pragia*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Enterobacteriaceae*Pragia*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2. Legacy taxonomy
+*Enterobacteriales*Providencia*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Enterobacteriaceae*Providencia*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2. Legacy taxonomy
+*Enterobacteriales*Escherichia-Shigella*			# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Pasteurellaceae*Actinobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Thermotogaceae*Thermotoga*							# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Aeromonadaceae*Aeromonas*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Spirochaetaceae*Spirochaeta*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Veillonellaceae*Veillonella*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Streptococcus*thermophilus*						# DOI:10.1051/lait:2003031
+*Enterococcus*										# Wilson (2009) - Bacteriology of Humans: An Ecological Perspective, ISBN: 9781444300383
+*Lactobacillus*										# Volker Mueller (2001) - Bacterial Fermentation, Encyclopedia of life sciences  and  Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Lactobacillus*										# Volker Mueller (2001) - Bacterial Fermentation, Encyclopedia of life sciences
+*Enterobacteriales*Erwinia*							# Volker Mueller (2001) - Bacterial Fermentation, Encyclopedia of life sciences
+*Enterobacteriaceae*Erwinia*						# Volker Mueller (2001) - Bacterial Fermentation, Encyclopedia of life sciences. Legacy taxonomy
+*Streptococcus*										# Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Carnobacterium*									# Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Enterococcus*										# Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Lactococcus										# Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Streptococcus*										# Salminen and von Wright (2004) - Lactic Acid Bacteria: Microbiological and Functional Aspects, ISBN: 9780824752033
+*Vibrionales*Vibrionaceae*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Peptostreptococcaceae*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3, The Firmicutes
+*Holophagaceae*Holophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidaceae*Bacteroides*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidales*Paludibacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Opitutaceae*Opitutus*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Ruminococcaceae*Faecalibacterium*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Rikenellaceae*Alistipes*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Dictyoglomi*Dictyoglomus*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Victivallaceae*Victivallis*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Clostridiales*Fusibacter*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Clostridiales*Acidaminobacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Pasteurellaceae*Haemophilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Clostridiales*Sedimentibacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Rhodocyclaceae*Propionivibrio*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Actinomycetaceae*Actinomyces*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micrococcaceae*Rothia*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Bacteroidales*Porphyromonas*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Porphyromonadaceae*Porphyromonas*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4. Legacy taxonomy
+*Flavobacteriales*Cloacibacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Carnobacteriaceae*Atopostipes*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Streptococcaceae*Lactococcus*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Rhodocyclaceae*Propionivibrio*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Moraxellaceae*Enhydrobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Streptococcaceae*Streptococcus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Aeromonadaceae*Tolumonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Ruminococcaceae*Sporobacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Holophagaceae*Holophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacillaceae*Anoxybacillus*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Veillonellaceae*Veillonella*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Opitutaceae*Opitutus*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Cellulomonadaceae*Cellulomonas*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Coriobacteriales*Atopobium*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Azospirillales*Skermanella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Fibrobacteraceae*Fibrobacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Verrucomicrobiaceae*Verrucomicrobium*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Cellulomonadaceae*Oerskovia*						# DOI:10.1099/ijs.0.64525-0
+*Micrococcales*Isoptericola*						# DOI:10.1099/ijs.0.64525-0
+*Verrucomicrobiaceae*Verrucomicrobium*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Desulfomicrobiaceae*Desulfomicrobium*				# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+
+
+aerobic_chemoheterotrophy
+# - - - - - - - - - - - - - 
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C  and  DOI:10.1099/ijs.0.02298-0  and  DOI:10.1007/BF00243451  and  DOI:10.1007/s002030000140
+*Acidobacteria*Bryobacter*							# DOI:10.1099/ijs.0.013250-0
+*Nocardioidaceae*Nocardioides*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Bacillaceae*Geobacillus*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Rhizobiales*Rhodoplanes*							# DOI:10.1099/00207713-44-4-665  and  Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Betaproteobacteriales*Hydrogenophaga*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Rhodoplanes*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Thauera*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Bradyrhizobium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Aquaspirillaceae*Microvirgula*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Xanthomonadaceae*Arenimonas*						# DOI:10.1099/ijs.0.64457-0  and  DOI:10.1099/ijs.0.000201
+*Intrasporangiaceae*Oryzihumus*						# DOI:10.1099/ijs.0.63799-0  and  DOI:10.1099/ijs.0.060897-0
+*Pannonibacter*phragmitetus*						# DOI:10.1099/ijs.0.02356-0
+*Actinobacteria*Rubrobacter*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - Actinobacteria
+*Rubrobacteriaceae*Rubrobacter*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - Actinobacteria. Legacy taxonomy
+*Pseudonocardiaceae*Crossiella*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Pseudonocardiaceae*Actinophytocola*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Saprospiraceae*Haliscomenobacter*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Other major lineages of Bacteria and the Archaea
+*Chitinophagaceae*Ferruginibacter*					# DOI:10.1099/ijs.0.000311
+*Rhizobiales*Microvirga*							# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Alphaproteobacteria and Betaproteobacteria
+*Polyangiaceae*Chondromyces*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2;  and  Reichenbach (1999) - The ecology of the myxobacteria
+*Anaeromyxobacter*dehalogenans*						# DOI:10.1128/AEM.68.2.893–900.2002
+*Alicyclobacillaceae*Alicyclobacillus*				# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Micromonosporaceae*Hamadaea*						# DOI:10.1099/ijs.0.65548-0
+*Micromonosporaceae*Dactylosporangium*				# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micromonosporaceae*Catellatospora*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Kineosporiaceae*Kineosporia*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Geodermatophilaceae*Blastococcus*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Acidobacteriales*Granulicella*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Other major lineages of Bacteria and the Archaea
+*Proteobacteria*Reyranella*							# DOI:10.1099/ijs.0.025775-0  and  DOI:10.1099/ijs.0.045922-0
+*Alphaproteobacteria*Elstera*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Alphaproteobacteria and Betaproteobacteria
+*Patulibacter*										# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Actinobacteria
+*Thermomonosporaceae*Actinoallomurus*				# DOI:10.1099/ijs.0.006858-0
+*Rhizobiales*Mesorhizobium*							# DOI:10.1099/00207713-47-3-895
+*Proteobacteria*Magnetospirillum*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Achromobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Bradyrhizobium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Cytophagaceae*Cytophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidetes*Adhaeribacter*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Bacteroidetes*Dyadobacter*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Proteobacteria*Stella*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2. Legacy taxonomy
+*Acetobacteraceae*Craurococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Acidocella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Acidiphilium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Hyphomicrobium*						# DOI:10.1007/978-3-642-30197-1_257
+*Hyphomicrobiaceae*Hyphomicrobium*					# DOI:10.1007/978-3-642-30197-1_257 . Legacy taxonomy
+*Rhizobiales*Devosia*								# DOI:10.1007/978-3-642-30197-1_257
+*Rhizobiales*Pedomicrobium*							# DOI:10.1007/978-3-642-30197-1_257
+*Hyphomicrobiaceae*Pedomicrobium*					# DOI:10.1007/978-3-642-30197-1_257 . Legacy taxonomy
+*Oceanospirillales*									# Munn (2011) - Marine Microbiology, chapter 4
+*Azotobacter*										# Munn (2011) - Marine Microbiology, chapter 4
+*Caulobacter*										# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Asticcacaulis*										# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Labrys*											# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Pedomicrobium*										# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Hyphomonas*										# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Ensifer*											# Bergey (1994) - Bergey's Manual of Determinative Bacteriology, ISBN: 9780683006032
+*Pseudoalteromonas*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Sphingomonadales*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C, Alpha, Beta, Delta, Epsilonproteobacteria
+*Vibrionaceae*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Xanthobacter*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C, Alpha, Beta, Delta, Epsilonproteobacteria
+*Nevskia*											# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Stenotrophomonas*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Pseudomonadaceae*Pseudomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Acidobacterium*									# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4, The Bacteroidetes, Spirochaetes, Tenericutes (Mollicutes), Acidobacteria, Fibrobacteres, Fusobacteria, Dictyoglomi, Gemmatimonadetes, Lentisphaerae, Verrucomicrobia, Chlamydiae, and Planctomycetes
+*Gordonia*											# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5, Actinobacteria
+*Microbacteriaceae*Agromyces*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5, Actinobacteria
+*Moraxellaceae*Acinetobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Acidobacteriaceae*Terriglobus*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Xanthomonadaceae*Xanthomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodobacteraceae*Paracoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Brevibacteriaceae*Brevibacterium*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Flavobacteriales*Chryseobacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Paenibacillaceae*Paenibacillus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Sphingobacteriaceae*Pedobacter*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Chthoniobacteraceae*Chthoniobacter*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Gammaproteobacteria*Rhodanobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Gammaproteobacteria*Alteromonadales*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acidothermaceae*Acidothermus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardiaceae*Gordonia*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Planctomycetes*Blastopirellula*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Microbacteriaceae*Frondihabitans*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nakamurellaceae*Nakamurella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Cryomorphaceae*Owenweeksia*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Nakamurellaceae*Nakamurella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Crocinitomicaceae*Crocinitomix*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Pasteurellaceae*Haemophilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Nocardioidaceae*Nocardioides*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Rhodocyclaceae*Thauera*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Zoogloea*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Streptomycetaceae*Streptomyces*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Verrucomicrobiaceae*Prosthecobacter*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Rhodocyclaceae*Dechloromonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Dechlorosoma*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Cryptosporangiaceae*Cryptosporangium*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Geodermatophilaceae*Modestobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micrococcaceae*Kocuria*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardioidaceae*Marmoricola*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Pseudonocardiaceae*Pseudonocardia*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Solirubrobacteraceae*Solirubrobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Flavobacteriales*Flavobacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Flavobacteriaceae*Flavobacterium*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4. Legacy taxonomy
+*Saprospiraceae*Haliscomenobacter*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Geobacillus*stearothermophilus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Beijerinckiaceae*Chelatococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Bosea*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Amaricoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodobacteraceae*Amaricoccus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Phyllobacterium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodobacteraceae*Gemmobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Neisseriaceae*Neisseria*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Azospira*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Azovibrio*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acinetobacter*radioresistens*						# Nishimura et al. (1988) - Acinetobacter radioresistens sp. nov. Isolated from Cotton and Soil
+*Legionellaceae*Legionella*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Moraxellaceae*Enhydrobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Xanthomonadaceae*Thermomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Mycoplasmataceae*Mycoplasma*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Planctomycetes*Singulisphaera*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Proteobacteria*Comamonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Leptothrix*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Sphaerotilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Micrococcaceae*Micrococcus*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micrococcaceae*Kocuria*							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Cellulomonadaceae*Cellulomonas*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Dermabacteraceae*Brachybacterium*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Intrasporangiaceae*Terrabacter*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Microbacteriaceae*Microbacterium*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Microbacteriaceae*Agromyces*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Microbacteriaceae*Curtobacterium*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Microbacteriaceae*Leifsonia*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Promicromonosporaceae*Isoptericola*				# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micromonosporaceae*Micromonospora*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Micromonosporaceae*Actinoplanes*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardioidaceae*Nocardioides*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardioidaceae*Aeromicrobium*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Streptomycetaceae*Streptomyces*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Thermomonosporaceae*Actinocorallia*				# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Thermomonosporaceae*Actinomadura*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Coriobacteriales*Atopobium*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Actinobacteria*Rubrobacter*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Azospirillaceae*Azospirillum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Proteobacteria*Rhodocista*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Azospirillales*Skermanella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Proteobacteria*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Paracraurococcus*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C. Legacy taxonomy
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhizobiales*Rhodopseudomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhizobiales*Rhodoplanes*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Proteobacteria*Rubrivivax*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Micrococcaceae*Nesterenkonia*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Moraxellaceae*Psychrobacter*						# Garrity, Brenner, Krieg and Staley (2010) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acidobacteriaceae*Edaphobacter*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Actinospicaceae*Actinospica*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Dietziaceae*Dietzia*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Mycobacteriaceae*Mycobacterium*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Mycobacterium*Mycobacterium*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5. Legacy taxonomy
+*Nocardiaceae*Nocardia*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardiaceae*Williamsia*							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Cryptosporangiaceae*Fodinicola*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Kineosporiaceae*Kineococcus*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Intrasporangiaceae*Phycicoccus*					# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Verrucomicrobiales*Verrucomicrobiaceae*			# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Verrucomicrobiaceae*Verrucomicrobium*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Cytophagales*Flammeovirgaceae*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Sphingomonadaceae*Porphyrobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Sphingomonadaceae*Sandaracinobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Burkholderiaceae*Cupriavidus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+invertebrate_parasites
+# - - - - - - - - - - - - 
+*Clostridium*botulinum*								# DOI:10.3390/insects5010139
+
+
+human_pathogens_septicemia
+# - - - - - - - - - - - - - - 
+
+
+human_pathogens_pneumonia
+# - - - - - - - - - - - - - 
+*Acinetobacter*lwoffii*								# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 1046625.3, NCBI Taxon ID: 1046625, Disease: Nosocomial infections, Pneumonia
+*Burkholderiales*bacterium*							# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 469610.4, NCBI Taxon ID: 469610, Disease: Pneumonia
+
+
+human_pathogens_nosocomia
+# - - - - - - - - - - - - - 
+*Acinetobacter*lwoffii*								# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 575588.3, NCBI Taxon ID: 575588, Disease: Nosocomial infections
+*Acinetobacter*radioresistens*						# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 575589.3, NCBI Taxon ID: 575589, Disease: Nosocomial infections
+
+
+human_pathogens_meningitis
+# - - - - - - - - - - - - - - 
+
+
+human_pathogens_gastroenteritis
+# - - - - - - - - - - - - - - - - 
+*Arcobacter*butzleri* 								# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 367737.6, NCBI Taxon ID: 367737, Disease: Gastroenteritis, Bacteremia
+
+
+human_pathogens_diarrhea
+# - - - - - - - - - - - - - 
+
+
+human_pathogens_all
+# - - - - - - - - - - 
+add_group:human_pathogens_septicemia
+add_group:human_pathogens_pneumonia
+add_group:human_pathogens_nosocomia
+add_group:human_pathogens_meningitis
+add_group:human_pathogens_gastroenteritis
+add_group:human_pathogens_diarrhea
+*Arcobacter*cryaerophilus*							# DOI:10.1128/JCM.42.4.1851–1852.2004
+*Arcobacter*butzleri*								# DOI:10.1128/JCM.42.4.1851–1852.2004
+*Streptococcus*anginosus*							# Claridge et al. (2001) - Streptococcus intermedius, Streptococcus constellatus, and Streptococcus anginosus (Streptococcus milleri group) are of different clinical importance and are not equally associated with abscess
+*Stenotrophomonas*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Moraxellaceae*Acinetobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Coxiellaceae*Coxiella*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+*Rhizobiales*Afipia*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Nocardia*farcinica*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardia*farcinica*								# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Acinetobacter*lwoffii*								# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 575588.3, NCBI Taxon ID: 575588, Disease: Nosocomial infections
+*Acinetobacter*radioresistens*						# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 575589.3, NCBI Taxon ID: 575589, Disease: Nosocomial infections
+*Arcobacter*butzleri*								# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 367737.6, NCBI Taxon ID: 367737, Disease: Gastroenteritis, Bacteremia
+*Burkholderiales*bacterium*							# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 469610.4, NCBI Taxon ID: 469610, Disease: Pneumonia
+*Prevotella*bivia*									# Pathosystems Resource Integration Centre (PATRIC). Genome ID: 868129.3, NCBI Taxon ID: 868129, Disease: Commensal
+
+
+fish_parasites
+# - - - - - - - - 
+
+
+human_gut
+# - - - - - 
+*Streptococcus*thermophilus*						# DOI:10.1038/nature08821
+*Enterobacteriales*Escherichia-Shigella*			# Wilson (2009) - Bacteriology of Humans: An Ecological Perspective, ISBN: 9781444300383
+*Acidaminococcus*									# Wilson (2009) - Bacteriology of Humans: An Ecological Perspective, ISBN: 9781444300383
+
+
+mammal_gut
+# - - - - - - 
+add_group:human_gut
+
+
+animal_parasites_or_symbionts
+# - - - - - - - - - - - - - - - 
+add_group:fish_parasites
+add_group:human_gut
+add_group:human_pathogens_all
+add_group:invertebrate_parasites
+*Prevotellaceae*Prevotella*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Chthoniobacterales*Xiphinematobacter*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Pasteurellaceae*Haemophilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Pasteurellaceae*									# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Pasteurellaceae*Haemophilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Campylobacteraceae*Campylobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Fibrobacter*succinogenes*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 4
+
+
+plant_pathogen
+# - - - - - - - - 
+*Ralstonia*solanacearum*							# DOI:10.1038/415497a
+*Ralstonia*solanacearum*							# Kelman (1954) - The relationship of pathogenicity of Pseudomonas solanacearum to colony appearance in a tetrazolium medium
+*Ralstonia*solanacearum*  							# UK National Collection of Plant Pathogenic Bacteria. NCPPB No: 173
+*Brevundimonas*diminuta*  							# UK National Collection of Plant Pathogenic Bacteria. NCPPB No: 4126
+
+
+oil_bioremediation
+# - - - - - - - - - - 
+
+
+aromatic_hydrocarbon_degradation
+# - - - - - - - - - - - - - - - - - 
+*Comamonas*testosteroni*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Nocardiaceae*Rhodococcus*							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+aromatic_compound_degradation
+# - - - - - - - - - - - - - - - 
+add_group:aromatic_hydrocarbon_degradation
+*Moraxellaceae*Acinetobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Clostridium*botulinum*								# Elsden et al. (1976) - The End Products of the Metabolism of Aromatic Amino Acids by Clostridia
+*Peptococcaceae*Pelotomaculum*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Peptococcaceae*Pelotomaculum*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Ruminococcaceae*Sporobacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Holophagaceae*Holophaga*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Gordonia*											# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Nocardioidaceae*Nocardioides*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+aliphatic_non_methane_hydrocarbon_degradation
+# - - - - - - - - - - - - - - - - - - - - - - - 
+*Geobacillus*stearothermophilus*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Hydrocarboniphaga*daqingensis*						# DOI:10.1099/ijs.0.019380-0
+*Nocardiaceae*Rhodococcus*							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+hydrocarbon_degradation
+# - - - - - - - - - - - - 
+add_group:methanotrophy
+add_group:aliphatic_non_methane_hydrocarbon_degradation
+add_group:aromatic_hydrocarbon_degradation
+*Halomonadaceae*Halomonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+dark_iron_oxidation
+# - - - - - - - - - - 
+*Gallionella*ferruginea*							# DOI:10.1146/annurev.micro.112408.134208
+*Sphaerotilus*natans*								# DOI:10.1146/annurev.micro.112408.134208
+*Gallionellaceae*Gallionella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+iron_respiration
+# - - - - - - - - - 
+*Desulfuromonadaceae*Desulfuromonas*				# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Rhodocyclaceae*Ferribacterium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Geobacteraceae*Geobacter*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Deferribacteraceae*Deferribacter*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Peptococcaceae*Desulfitobacterium*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3, Firmicutes
+*Anaeromyxobacter*dehalogenans*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Geobacteraceae*Geobacter*							# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+
+
+nitrate_respiration
+# - - - - - - - - - - 
+add_group:nitrate_denitrification
+add_group:nitrate_ammonification
+*Rhodocyclaceae*Thauera*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Magnetospirillum*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Desulfurispirillum*indicum*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Other major lineages of Bacteria and the Archaea
+*Proteobacteria*Achromobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Ferribacterium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Dechloromonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Dechlorosoma*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Deferribacteraceae*Deferribacter*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Xanthomonadaceae*Stenotrophomonas*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Alteromonadaceae*Alishewanella*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Rhodobacteraceae*Gemmobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Proteobacteria*Achromobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhodocyclaceae*Azoarcus*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhodocyclaceae*Azospira*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhodocyclaceae*Dechlorosoma*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Desulfobacterium*catecholicum*						# Barton and Hamilton (2007). Sulphate-Reducing Bacteria: Environmental and Engineered Systems, ISBN: 9780521854856
+
+
+nitrate_reduction
+# - - - - - - - - - 
+add_group:nitrate_respiration
+*Actinobacteria*Rubrobacter*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - Actinobacteria
+*Rubrobacteriaceae*Rubrobacter*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - Actinobacteria. Legacy taxonomy
+*Micromonosporaceae*Hamadaea*						# DOI:10.1099/ijs.0.65548-0
+*Methylococcales*Methylosarcina*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Acinetobacter*radioresistens*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Vibrionaceae*Vibrio*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Aeromonadaceae*Aeromonas*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Enterobacteriales*Buchnera*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Enterobacteriaceae*Buchnera*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B. Legacy taxonomy
+*Enterobacteriales*Escherichia-Shigella*			# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Pasteurellaceae*Actinobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Pasteurellaceae*Haemophilus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B
+*Acetobacteraceae*Craurococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Craurococcus*roseus*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhizobiaceae*Ensifer*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Burkholderiaceae*Cupriavidus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Gammaproteobacteria*Ideonella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Gammaproteobacteria*Eikenella*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Neisseriaceae*Eikenella*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C. Legacy taxonomy
+*Arcobacter*butzleri*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Bacillus*funiculus*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Veillonellaceae*Veillonella*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Cytophagales*Emticicia*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Opitutaceae*Opitutus*								# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Actinobacteria*Rubrobacter*						# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Patulibacter*minatonensis							# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+*Burkholderiaceae*Cupriavidus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+nitrogen_respiration
+# - - - - - - - - - - - 
+add_group:nitrate_respiration
+add_group:nitrite_respiration
+add_group:denitrification
+add_group:nitrate_ammonification
+add_group:nitrite_ammonification
+add_group:anammox
+
+
+fumarate_respiration
+# - - - - - - - - - - - 
+*Rhodocyclaceae*Ferribacterium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Anaeromyxobacter*dehalogenans*						# DOI:10.1128/AEM.68.2.893–900.2002
+*Desulfosporosinus*youngiae*						# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Firmicutes and Tenericutes
+
+
+intracellular_parasites
+# - - - - - - - - - - - - 
+*Parachlamydiaceae*Neochlamydia*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Parachlamydiaceae*Protochlamydia*					# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Chlamydiae*										# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Alphaproteobacteria*Rickettsiales*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Holosporaceae*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Legionellales*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Coxiellaceae*Coxiella*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+chlorate_reducers
+# - - - - - - - - - 
+*Rhodocyclaceae*Dechloromonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhodocyclaceae*Dechlorosoma*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+predatory_or_exoparasitic
+# - - - - - - - - - - - - - 
+*Bacteriovoracaceae*Bacteriovorax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Burkholderiaceae*Cupriavidus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Bdellovibrionaceae*								# Dominik Schwudke (2003) Biochemical and genetic approaches for the characterization of Bdellovibrionaceae, unique predatory bacteria (PhD Thesis)
+*Haliangiaceae*Haliangium*							# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+*Myxococcales*Phaselicystidaceae*					# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+
+
+chloroplasts
+# - - - - - - - 
+*chloroplast*
+
+
+cyanobacteria
+# - - - - - - - 
+*cyanobacteria*
+subtract_group:chloroplasts
+
+
+anoxygenic_photoautotrophy_H2_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+anoxygenic_photoautotrophy_S_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+*Rhizobiales*Rhodoplanes*							# DOI:10.1099/00207713-44-4-665  and  Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Ectothiorhodospirales*Ectothiorhodospiraceae*		# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+anoxygenic_photoautotrophy_Fe_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+anoxygenic_photoautotrophy
+# - - - - - - - - - - - - - - 
+add_group:anoxygenic_photoautotrophy_H2_oxidizing
+add_group:anoxygenic_photoautotrophy_S_oxidizing
+add_group:anoxygenic_photoautotrophy_Fe_oxidizing
+
+
+oxygenic_photoautotrophy
+# - - - - - - - - - - - - - 
+add_group:cyanobacteria
+
+
+photoautotrophy
+# - - - - - - - - 
+add_group:oxygenic_photoautotrophy
+add_group:anoxygenic_photoautotrophy
+
+
+aerobic_anoxygenic_phototrophy
+# - - - - - - - - - - - - - - - - 
+*Roseateles*depolymerans*							# DOI:10.1038/415630a
+*Craurococcus*roseus*								# DOI:10.1007/978-1-4020-8815-5_3
+*Roseateles*depolymerans*							# DOI:10.1007/978-1-4020-8815-5_3
+
+
+photoheterotrophy
+# - - - - - - - - - 
+add_group:aerobic_anoxygenic_phototrophy
+*Rhizobiales*Rhodoplanes*							# DOI:10.1099/00207713-44-4-665  and  Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhodobacteraceae*Rhodobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Rhodomicrobium*						# Duchow and Douglas (1949) - Rhodomicrobium vannielii, a new photoheterotrophic bacterium;   DOI:10.1099/ijs.0.046409-0
+*Acetobacteraceae*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Rhodocista*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Proteobacteria*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Paracraurococcus*Paracraurococcus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C. Legacy taxonomy
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhodobacteraceae*Rhodobacter*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Rhizobiales*Rhodopseudomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Sphingomonadaceae*Sandaracinobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Sphingomonadaceae*Porphyrobacter*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Craurococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseococcus*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Sphingomonadaceae*Sandaracinobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+phototrophy
+# - - - - - - 
+add_group:photoautotrophy
+add_group:photoheterotrophy
+
+
+plastic_degradation
+# - - - - - - - - - - 
+*Comamonas*testosteroni*							# Krishna and Phale (2008). Bacterial degradation of phthalate isomers and their esters
+*Acinetobacter*lwoffii*								# DOI:10.1007/s00253-008-1548-5
+
+
+ureolysis
+# - - - - - 
+*Pannonibacter*phragmitetus*						# DOI:10.1099/ijs.0.02356-0
+*Xanthomonadaceae*Thermomonas*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Pseudomonadaceae*Azotobacter*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Gammaproteobacteria*Rhizobacter*					# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Azospirillaceae*Azospirillum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Acetobacteraceae*Roseomonas*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Mesorhizobium*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Afipia*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Rhizobiales*Methylobacterium*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Duganella*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Proteobacteria*Herbaspirillum*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Gammaproteobacteria*Massilia*						# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Methylophilaceae*Methylophilus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Bacillus*funiculus*								# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Sporosarcina*pasteurii*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Verrucomicrobiaceae*Verrucomicrobium*				# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Cytophagales*Emticicia*							# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Planctomycetes*Singulisphaera*						# Garrity, Brenner, Krieg and Staley (2011) Bergey's Manual of Systematic Bacteriology, vol. 4
+*Dietzia*maris*										# Garrity, Brenner, Krieg and Staley (2012) Bergey's Manual of Systematic Bacteriology, vol. 5
+
+
+reductive_acetogenesis
+# - - - - - - - - - - - - 
+*Veillonellaceae*Sporomusa*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Eubacteriaceae*Acetobacterium*						# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+
+
+chemoheterotrophy
+# - - - - - - - - - 
+add_group:aerobic_chemoheterotrophy
+add_group:fermentation
+add_group:cellulolysis
+add_group:xylanolysis
+add_group:chitinolysis
+add_group:ligninolysis
+add_group:methylotrophy
+add_group:acetoclastic_methanogenesis
+add_group:methanogenesis_by_disproportionation_of_methyl_groups
+add_group:methanogenesis_using_formate
+add_group:oil_bioremediation
+add_group:aromatic_compound_degradation
+add_group:hydrocarbon_degradation
+*Thermoplasmata*Thermoplasmatales*					# Bergey's Manual of Systematics of Archaea and Bacteria (2015). Domain: Archaea
+
+

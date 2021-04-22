@@ -1,0 +1,33 @@
+WARNING: The module 'biom' was not found.
+         This script will only accept classical (e.g. tab-separated) tables
+WARNING: The module 'h5py' was not found.
+         This script may not work with tables in BIOM HDF5 format
+  Reading input table..
+  Loaded 17770 out of 17770 rows amongst 17771 lines, and 511 columns, from file '/kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/otu_table.tsv'
+  Reading groups..
+  Read 8978 lines from file '/kb/module/data/FAPROTAX.txt', found 90 groups with 8236 members (4983 unique members)
+  Assigning rows to groups..
+  Saving group-record associations as table..
+  Saving group-record associations as dense table (lists of groups per record)..
+  Saving group overlaps as table..
+  Collapsing table..
+  Note: No entry found for group 'methanogenesis_using_formate'
+  Note: No entry found for group 'dark_sulfite_oxidation'
+  Note: No entry found for group 'arsenate_detoxification'
+  Note: No entry found for group 'arsenite_oxidation_detoxification'
+  Note: No entry found for group 'arsenite_oxidation_energy_yielding'
+  Note: No entry found for group 'dissimilatory_arsenite_oxidation'
+  Note: No entry found for group 'dark_sulfur_oxidation'
+  Note: No entry found for group 'ligninolysis'
+  Note: No entry found for group 'human_pathogens_septicemia'
+  Note: No entry found for group 'human_pathogens_meningitis'
+  Note: No entry found for group 'human_pathogens_diarrhea'
+  Note: No entry found for group 'fish_parasites'
+  Note: No entry found for group 'oil_bioremediation'
+  Note: No entry found for group 'anoxygenic_photoautotrophy_H2_oxidizing'
+  Note: No entry found for group 'anoxygenic_photoautotrophy_Fe_oxidizing'
+  Assigned 3997 records to groups, 13773 records were leftovers
+  Writing collapsed table '/kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/collapsed_func_table.tsv'..
+  Saving sub-tables corresponding to groups..
+  Writing report '/kb/module/work/tmp/266bfcae-8e51-4b3d-aa08-a1d95eeb0368/return/FAPROTAX_output/report.txt'..
+  Saving subset of group definitions used in this analysis..

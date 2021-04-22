@@ -1,0 +1,63 @@
+# Groups associated with records, within table '/kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/otu_table.tsv'
+# Based on groups table '/kb/module/data/FAPROTAX.txt'
+# Generated on: 2021.01.11 21:22:11
+# Used command:
+#   /opt/FAPROTAX_1.2.1/collapse_table.py --input_table /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/otu_table.tsv --input_groups_file /kb/module/data/FAPROTAX.txt --out_collapsed /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/collapsed_func_table.tsv --out_report /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/report.txt --out_sub_tables_dir /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/sub_tables --out_groups2records_table /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/groups2records.tsv --out_groups2records_table_dense /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/groups2records_dense.tsv --out_group_overlaps /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/group_overlaps.tsv --out_group_definitions_used /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/group_definitions_used.txt --row_names_are_in_column taxonomy --omit_columns 1 --verbose
+#
+# Summary:
+#   Loaded 90 groups comprising 8236 members (4983 unique members)
+#   Established 22 assignments of records to groups
+#   41 out of 50 records could not be assigned to any group (leftovers)
+#   Number of groups represented: 15
+#
+record	group
+Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Xanthobacteraceae;uncultured (taxid:2554);	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Verrucomicrobiota;Verrucomicrobiae;Pedosphaerales;Pedosphaeraceae;unclassified_Pedosphaeraceae;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Nitrosomonadaceae;MND1;	
+unclassified_Root;unclassified_Root;unclassified_Root;unclassified_Root;unclassified_Root;unclassified_Root;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Comamonadaceae;Rhodoferax;	fermentation,aerobic_chemoheterotrophy,photoheterotrophy,phototrophy,chemoheterotrophy
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;unclassified_Burkholderiales;unclassified_Burkholderiales;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;unclassified_Burkholderiales;unclassified_Burkholderiales;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Diplorickettsiales;Diplorickettsiaceae;Aquicella;	
+Bacteria;Acidobacteriota;Acidobacteriae;Bryobacterales;Bryobacteraceae;Bryobacter;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Nitrosomonadaceae;GOUTA6;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;unclassified_Burkholderiales;unclassified_Burkholderiales;	
+Bacteria;Acidobacteriota;Acidobacteriae;Acidobacteriales;Koribacteraceae;Candidatus Koribacter;	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Acidobacteriota;Vicinamibacteria;Vicinamibacterales;Vicinamibacteraceae;unclassified_Vicinamibacteraceae;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Legionellales;Legionellaceae;Legionella;	aerobic_chemoheterotrophy,intracellular_parasites,chemoheterotrophy
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Hydrogenophilaceae;Thiobacillus;	dark_sulfide_oxidation,dark_oxidation_of_sulfur_compounds
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Firmicutes;Dethiobacteria;Dethiobacterales;Dethiobacteraceae;uncultured (taxid:45716);	
+Bacteria;Gemmatimonadota;Gemmatimonadetes;Gemmatimonadales;Gemmatimonadaceae;uncultured (taxid:45881);	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Desulfobacterota;Syntrophobacteria;Syntrophobacterales;Syntrophobacteraceae;Syntrophobacter;	sulfate_respiration,respiration_of_sulfur_compounds
+Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Escherichia-Shigella;	
+Bacteria;Acidobacteriota;Acidobacteriae;Solibacterales;Solibacteraceae;Candidatus Solibacter;	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;unclassified_Enterobacteriaceae;	
+Bacteria;Actinobacteriota;Actinobacteria;Streptosporangiales;Thermomonosporaceae;unclassified_Thermomonosporaceae;	
+Bacteria;Myxococcota;Polyangia;Haliangiales;Haliangiaceae;Haliangium;	predatory_or_exoparasitic
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Proteobacteria;Gammaproteobacteria;unclassified_Gammaproteobacteria;unclassified_Gammaproteobacteria;unclassified_Gammaproteobacteria;	
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Burkholderiaceae;Burkholderia-Caballeronia-Paraburkholderia;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Comamonadaceae;Caenimonas;	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Desulfobacterota;Desulfobacteria;Desulfatiglandales;Desulfatiglandaceae;Desulfatiglans;	
+Bacteria;Verrucomicrobiota;Verrucomicrobiae;Verrucomicrobiales;Rubritaleaceae;Luteolibacter;	
+Bacteria;Proteobacteria;Alphaproteobacteria;Rhizobiales;Rhizobiales Incertae Sedis;uncultured (taxid:14525);	
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Acidiferrobacterales;Acidiferrobacteraceae;Sulfurifustis;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Coxiellales;Coxiellaceae;Coxiella;	human_pathogens_all,animal_parasites_or_symbionts,intracellular_parasites
+Bacteria;Desulfobacterota;Desulfobaccia;Desulfobaccales;Desulfobaccaceae;Desulfobacca;	
+Bacteria;Myxococcota;Polyangia;Haliangiales;Haliangiaceae;Haliangium;	predatory_or_exoparasitic
+Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;unclassified_Bacteria;	
+Bacteria;Verrucomicrobiota;Omnitrophia;Omnitrophales;Omnitrophaceae;Candidatus Omnitrophus;	
+Bacteria;Proteobacteria;Gammaproteobacteria;Burkholderiales;Methylophilaceae;MM1;	methanol_oxidation,methylotrophy,chemoheterotrophy
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Listeriaceae;Brochothrix;	fermentation,chemoheterotrophy
+Bacteria;Actinobacteriota;Thermoleophilia;Solirubrobacterales;Solirubrobacteraceae;Conexibacter;	

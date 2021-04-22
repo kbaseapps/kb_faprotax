@@ -1,0 +1,93 @@
+WARNING: The module 'biom' was not found.
+         This script will only accept classical (e.g. tab-separated) tables
+WARNING: The module 'h5py' was not found.
+         This script may not work with tables in BIOM HDF5 format
+  Reading input table..
+  Loaded 50 out of 50 rows amongst 51 lines, and 30 columns, from file '/kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/otu_table.tsv'
+  Reading groups..
+  Read 8978 lines from file '/kb/module/data/FAPROTAX.txt', found 90 groups with 8236 members (4983 unique members)
+  Assigning rows to groups..
+  Saving group-record associations as table..
+  Saving group-record associations as dense table (lists of groups per record)..
+  Saving group overlaps as table..
+  Collapsing table..
+  Note: No entry found for group 'methanotrophy'
+  Note: No entry found for group 'acetoclastic_methanogenesis'
+  Note: No entry found for group 'methanogenesis_by_disproportionation_of_methyl_groups'
+  Note: No entry found for group 'methanogenesis_using_formate'
+  Note: No entry found for group 'methanogenesis_by_CO2_reduction_with_H2'
+  Note: No entry found for group 'methanogenesis_by_reduction_of_methyl_compounds_with_H2'
+  Note: No entry found for group 'hydrogenotrophic_methanogenesis'
+  Note: No entry found for group 'methanogenesis'
+  Note: No entry found for group 'aerobic_ammonia_oxidation'
+  Note: No entry found for group 'aerobic_nitrite_oxidation'
+  Note: No entry found for group 'nitrification'
+  Note: No entry found for group 'sulfur_respiration'
+  Note: No entry found for group 'dark_sulfite_oxidation'
+  Note: No entry found for group 'sulfite_respiration'
+  Note: No entry found for group 'thiosulfate_respiration'
+  Note: No entry found for group 'arsenate_detoxification'
+  Note: No entry found for group 'arsenate_respiration'
+  Note: No entry found for group 'dissimilatory_arsenate_reduction'
+  Note: No entry found for group 'arsenite_oxidation_detoxification'
+  Note: No entry found for group 'arsenite_oxidation_energy_yielding'
+  Note: No entry found for group 'dissimilatory_arsenite_oxidation'
+  Note: No entry found for group 'anammox'
+  Note: No entry found for group 'nitrate_denitrification'
+  Note: No entry found for group 'nitrite_denitrification'
+  Note: No entry found for group 'nitrous_oxide_denitrification'
+  Note: No entry found for group 'denitrification'
+  Note: No entry found for group 'chitinolysis'
+  Note: No entry found for group 'knallgas_bacteria'
+  Note: No entry found for group 'dark_hydrogen_oxidation'
+  Note: No entry found for group 'nitrogen_fixation'
+  Note: No entry found for group 'nitrate_ammonification'
+  Note: No entry found for group 'nitrite_ammonification'
+  Note: No entry found for group 'nitrite_respiration'
+  Note: No entry found for group 'cellulolysis'
+  Note: No entry found for group 'xylanolysis'
+  Note: No entry found for group 'dark_sulfur_oxidation'
+  Note: No entry found for group 'dark_thiosulfate_oxidation'
+  Note: No entry found for group 'manganese_oxidation'
+  Note: No entry found for group 'manganese_respiration'
+  Note: No entry found for group 'ligninolysis'
+  Note: No entry found for group 'invertebrate_parasites'
+  Note: No entry found for group 'human_pathogens_septicemia'
+  Note: No entry found for group 'human_pathogens_pneumonia'
+  Note: No entry found for group 'human_pathogens_nosocomia'
+  Note: No entry found for group 'human_pathogens_meningitis'
+  Note: No entry found for group 'human_pathogens_gastroenteritis'
+  Note: No entry found for group 'human_pathogens_diarrhea'
+  Note: No entry found for group 'fish_parasites'
+  Note: No entry found for group 'human_gut'
+  Note: No entry found for group 'mammal_gut'
+  Note: No entry found for group 'plant_pathogen'
+  Note: No entry found for group 'oil_bioremediation'
+  Note: No entry found for group 'aromatic_hydrocarbon_degradation'
+  Note: No entry found for group 'aromatic_compound_degradation'
+  Note: No entry found for group 'aliphatic_non_methane_hydrocarbon_degradation'
+  Note: No entry found for group 'hydrocarbon_degradation'
+  Note: No entry found for group 'dark_iron_oxidation'
+  Note: No entry found for group 'iron_respiration'
+  Note: No entry found for group 'nitrate_respiration'
+  Note: No entry found for group 'nitrate_reduction'
+  Note: No entry found for group 'nitrogen_respiration'
+  Note: No entry found for group 'fumarate_respiration'
+  Note: No entry found for group 'chlorate_reducers'
+  Note: No entry found for group 'chloroplasts'
+  Note: No entry found for group 'cyanobacteria'
+  Note: No entry found for group 'anoxygenic_photoautotrophy_H2_oxidizing'
+  Note: No entry found for group 'anoxygenic_photoautotrophy_S_oxidizing'
+  Note: No entry found for group 'anoxygenic_photoautotrophy_Fe_oxidizing'
+  Note: No entry found for group 'anoxygenic_photoautotrophy'
+  Note: No entry found for group 'oxygenic_photoautotrophy'
+  Note: No entry found for group 'photoautotrophy'
+  Note: No entry found for group 'aerobic_anoxygenic_phototrophy'
+  Note: No entry found for group 'plastic_degradation'
+  Note: No entry found for group 'ureolysis'
+  Note: No entry found for group 'reductive_acetogenesis'
+  Assigned 9 records to groups, 41 records were leftovers
+  Writing collapsed table '/kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/collapsed_func_table.tsv'..
+  Saving sub-tables corresponding to groups..
+  Writing report '/kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/report.txt'..
+  Saving subset of group definitions used in this analysis..

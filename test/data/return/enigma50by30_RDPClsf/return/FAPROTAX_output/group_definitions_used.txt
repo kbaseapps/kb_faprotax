@@ -1,0 +1,470 @@
+# Group definitions relevant to input table '/kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/otu_table.tsv'
+# Generated on: 2021.01.11 21:22:11
+# Used command:
+#   /opt/FAPROTAX_1.2.1/collapse_table.py --input_table /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/otu_table.tsv --input_groups_file /kb/module/data/FAPROTAX.txt --out_collapsed /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/collapsed_func_table.tsv --out_report /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/report.txt --out_sub_tables_dir /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/sub_tables --out_groups2records_table /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/groups2records.tsv --out_groups2records_table_dense /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/groups2records_dense.tsv --out_group_overlaps /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/group_overlaps.tsv --out_group_definitions_used /kb/module/work/tmp/kbfptx_f092af5f-f8f5-4e6d-9f7b-ea63b2a59c1c/return/FAPROTAX_output/group_definitions_used.txt --row_names_are_in_column taxonomy --omit_columns 1 --verbose
+#
+# Summary:
+#   Loaded 90 groups comprising 8236 members (4983 unique members)
+#   Established 22 assignments of records to groups
+#   41 out of 50 records could not be assigned to any group (leftovers)
+#   Number of groups represented: 15
+#
+methanotrophy
+# - - - - - - - 
+
+
+acetoclastic_methanogenesis
+# - - - - - - - - - - - - - - 
+
+
+methanogenesis_by_disproportionation_of_methyl_groups
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+methanogenesis_using_formate
+# - - - - - - - - - - - - - - - 
+
+
+methanogenesis_by_CO2_reduction_with_H2
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+methanogenesis_by_reduction_of_methyl_compounds_with_H2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+hydrogenotrophic_methanogenesis
+# - - - - - - - - - - - - - - - - 
+add_group:methanogenesis_by_CO2_reduction_with_H2
+add_group:methanogenesis_by_reduction_of_methyl_compounds_with_H2
+
+
+methanogenesis
+# - - - - - - - - 
+add_group:hydrogenotrophic_methanogenesis
+add_group:methanogenesis_by_disproportionation_of_methyl_groups
+add_group:acetoclastic_methanogenesis
+add_group:methanogenesis_using_formate
+add_group:methanogenesis_by_CO2_reduction_with_H2
+add_group:methanogenesis_by_reduction_of_methyl_compounds_with_H2
+
+
+methanol_oxidation
+# - - - - - - - - - - 
+*Methylophilaceae*									# DOI:10.1128/JB.00404-11
+
+
+methylotrophy
+# - - - - - - - 
+add_group:methanol_oxidation
+add_group:methanotrophy
+
+
+aerobic_ammonia_oxidation
+# - - - - - - - - - - - - - 
+
+
+aerobic_nitrite_oxidation
+# - - - - - - - - - - - - - 
+
+
+nitrification
+# - - - - - - - 
+add_group:aerobic_ammonia_oxidation
+add_group:aerobic_nitrite_oxidation
+
+
+sulfate_respiration
+# - - - - - - - - - - 
+*Syntrophobacteraceae*Syntrophobacter*				# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+sulfur_respiration
+# - - - - - - - - - - 
+
+
+dark_sulfite_oxidation
+# - - - - - - - - - - - - 
+
+
+sulfite_respiration
+# - - - - - - - - - - 
+
+
+thiosulfate_respiration
+# - - - - - - - - - - - - 
+
+
+respiration_of_sulfur_compounds
+# - - - - - - - - - - - - - - - - 
+add_group:sulfite_respiration
+add_group:sulfur_respiration
+add_group:sulfate_respiration
+add_group:thiosulfate_respiration
+
+
+arsenate_detoxification
+# - - - - - - - - - - - - 
+
+
+arsenate_respiration
+# - - - - - - - - - - - 
+
+
+dissimilatory_arsenate_reduction
+# - - - - - - - - - - - - - - - - - 
+add_group:arsenate_detoxification
+add_group:arsenate_respiration
+
+
+arsenite_oxidation_detoxification
+# - - - - - - - - - - - - - - - - - 
+
+
+arsenite_oxidation_energy_yielding
+# - - - - - - - - - - - - - - - - - - 
+
+
+dissimilatory_arsenite_oxidation
+# - - - - - - - - - - - - - - - - - 
+add_group:arsenite_oxidation_detoxification
+add_group:arsenite_oxidation_energy_yielding
+
+
+anammox
+# - - - - 
+
+
+nitrate_denitrification
+# - - - - - - - - - - - - 
+
+
+nitrite_denitrification
+# - - - - - - - - - - - - 
+add_group:nitrate_denitrification
+
+
+nitrous_oxide_denitrification
+# - - - - - - - - - - - - - - - 
+add_group:nitrite_denitrification
+
+
+denitrification
+# - - - - - - - - 
+add_group:nitrate_denitrification
+add_group:nitrite_denitrification
+add_group:nitrous_oxide_denitrification
+
+
+chitinolysis
+# - - - - - - - 
+
+
+knallgas_bacteria
+# - - - - - - - - - 
+
+
+dark_hydrogen_oxidation
+# - - - - - - - - - - - - 
+add_group:knallgas_bacteria
+
+
+nitrogen_fixation
+# - - - - - - - - - 
+
+
+nitrate_ammonification
+# - - - - - - - - - - - - 
+
+
+nitrite_ammonification
+# - - - - - - - - - - - - 
+add_group:nitrate_ammonification
+
+
+nitrite_respiration
+# - - - - - - - - - - 
+add_group:nitrite_ammonification
+add_group:nitrite_denitrification
+add_group:anammox
+
+
+cellulolysis
+# - - - - - - - 
+
+
+xylanolysis
+# - - - - - - 
+
+
+dark_sulfide_oxidation
+# - - - - - - - - - - - - 
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+dark_sulfur_oxidation
+# - - - - - - - - - - - 
+
+
+dark_thiosulfate_oxidation
+# - - - - - - - - - - - - - - 
+
+
+dark_oxidation_of_sulfur_compounds
+# - - - - - - - - - - - - - - - - - - 
+add_group:dark_sulfide_oxidation
+add_group:dark_sulfur_oxidation
+add_group:dark_thiosulfate_oxidation
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2001) Bergey's Manual of Systematic Bacteriology, vol. 1
+*Hydrogenophilaceae*Thiobacillus*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+manganese_oxidation
+# - - - - - - - - - - 
+
+
+manganese_respiration
+# - - - - - - - - - - - 
+
+
+ligninolysis
+# - - - - - - - 
+
+
+fermentation
+# - - - - - - - 
+*Listeriaceae*Brochothrix*							# Garrity, Brenner, Krieg and Staley (2009) Bergey's Manual of Systematic Bacteriology, vol. 3
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Comamonadaceae*Rhodoferax*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2. Legacy taxonomy
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Comamonadaceae*Rhodoferax*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C. Legacy taxonomy
+
+
+aerobic_chemoheterotrophy
+# - - - - - - - - - - - - - 
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C  and  DOI:10.1099/ijs.0.02298-0  and  DOI:10.1007/BF00243451  and  DOI:10.1007/s002030000140
+*Comamonadaceae*Rhodoferax*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C  and  DOI:10.1099/ijs.0.02298-0  and  DOI:10.1007/BF00243451  and  DOI:10.1007/s002030000140 . Legacy taxonomy
+*Legionellaceae*Legionella*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+invertebrate_parasites
+# - - - - - - - - - - - - 
+
+
+human_pathogens_septicemia
+# - - - - - - - - - - - - - - 
+
+
+human_pathogens_pneumonia
+# - - - - - - - - - - - - - 
+
+
+human_pathogens_nosocomia
+# - - - - - - - - - - - - - 
+
+
+human_pathogens_meningitis
+# - - - - - - - - - - - - - - 
+
+
+human_pathogens_gastroenteritis
+# - - - - - - - - - - - - - - - - 
+
+
+human_pathogens_diarrhea
+# - - - - - - - - - - - - - 
+
+
+human_pathogens_all
+# - - - - - - - - - - 
+add_group:human_pathogens_septicemia
+add_group:human_pathogens_pneumonia
+add_group:human_pathogens_nosocomia
+add_group:human_pathogens_meningitis
+add_group:human_pathogens_gastroenteritis
+add_group:human_pathogens_diarrhea
+*Coxiellaceae*Coxiella*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2B, Gammaproteobacteria
+
+
+fish_parasites
+# - - - - - - - - 
+
+
+human_gut
+# - - - - - 
+
+
+mammal_gut
+# - - - - - - 
+add_group:human_gut
+
+
+animal_parasites_or_symbionts
+# - - - - - - - - - - - - - - - 
+add_group:fish_parasites
+add_group:human_gut
+add_group:human_pathogens_all
+add_group:invertebrate_parasites
+
+
+plant_pathogen
+# - - - - - - - - 
+
+
+oil_bioremediation
+# - - - - - - - - - - 
+
+
+aromatic_hydrocarbon_degradation
+# - - - - - - - - - - - - - - - - - 
+
+
+aromatic_compound_degradation
+# - - - - - - - - - - - - - - - 
+add_group:aromatic_hydrocarbon_degradation
+
+
+aliphatic_non_methane_hydrocarbon_degradation
+# - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+hydrocarbon_degradation
+# - - - - - - - - - - - - 
+add_group:methanotrophy
+add_group:aliphatic_non_methane_hydrocarbon_degradation
+add_group:aromatic_hydrocarbon_degradation
+
+
+dark_iron_oxidation
+# - - - - - - - - - - 
+
+
+iron_respiration
+# - - - - - - - - - 
+
+
+nitrate_respiration
+# - - - - - - - - - - 
+add_group:nitrate_denitrification
+add_group:nitrate_ammonification
+
+
+nitrate_reduction
+# - - - - - - - - - 
+add_group:nitrate_respiration
+
+
+nitrogen_respiration
+# - - - - - - - - - - - 
+add_group:nitrate_respiration
+add_group:nitrite_respiration
+add_group:denitrification
+add_group:nitrate_ammonification
+add_group:nitrite_ammonification
+add_group:anammox
+
+
+fumarate_respiration
+# - - - - - - - - - - - 
+
+
+intracellular_parasites
+# - - - - - - - - - - - - 
+*Legionellales*										# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+*Coxiellaceae*Coxiella*								# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2
+
+
+chlorate_reducers
+# - - - - - - - - - 
+
+
+predatory_or_exoparasitic
+# - - - - - - - - - - - - - 
+*Haliangiaceae*Haliangium*							# Rosenberg, DeLong, Lory, Stackebrandt, Thompson (2014) - The Prokaryotes - Deltaproteobacteria and Epsilonproteobacteria
+
+
+chloroplasts
+# - - - - - - - 
+
+
+cyanobacteria
+# - - - - - - - 
+subtract_group:chloroplasts
+
+
+anoxygenic_photoautotrophy_H2_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+anoxygenic_photoautotrophy_S_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+anoxygenic_photoautotrophy_Fe_oxidizing
+# - - - - - - - - - - - - - - - - - - - - 
+
+
+anoxygenic_photoautotrophy
+# - - - - - - - - - - - - - - 
+add_group:anoxygenic_photoautotrophy_H2_oxidizing
+add_group:anoxygenic_photoautotrophy_S_oxidizing
+add_group:anoxygenic_photoautotrophy_Fe_oxidizing
+
+
+oxygenic_photoautotrophy
+# - - - - - - - - - - - - - 
+add_group:cyanobacteria
+
+
+photoautotrophy
+# - - - - - - - - 
+add_group:oxygenic_photoautotrophy
+add_group:anoxygenic_photoautotrophy
+
+
+aerobic_anoxygenic_phototrophy
+# - - - - - - - - - - - - - - - - 
+
+
+photoheterotrophy
+# - - - - - - - - - 
+add_group:aerobic_anoxygenic_phototrophy
+*Gammaproteobacteria*Rhodoferax*					# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C
+*Comamonadaceae*Rhodoferax*							# Garrity, Brenner, Krieg and Staley (2005) Bergey's Manual of Systematic Bacteriology, vol. 2C. Legacy taxonomy
+
+
+phototrophy
+# - - - - - - 
+add_group:photoautotrophy
+add_group:photoheterotrophy
+
+
+plastic_degradation
+# - - - - - - - - - - 
+
+
+ureolysis
+# - - - - - 
+
+
+reductive_acetogenesis
+# - - - - - - - - - - - - 
+
+
+chemoheterotrophy
+# - - - - - - - - - 
+add_group:aerobic_chemoheterotrophy
+add_group:fermentation
+add_group:cellulolysis
+add_group:xylanolysis
+add_group:chitinolysis
+add_group:ligninolysis
+add_group:methylotrophy
+add_group:acetoclastic_methanogenesis
+add_group:methanogenesis_by_disproportionation_of_methyl_groups
+add_group:methanogenesis_using_formate
+add_group:oil_bioremediation
+add_group:aromatic_compound_degradation
+add_group:hydrocarbon_degradation
+
+

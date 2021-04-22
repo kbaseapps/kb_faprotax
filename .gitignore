@@ -4,5 +4,4 @@ test.cfg
 *.py.bak*
 __pycache__
 *.pyc
-test/data/
 *.tmp

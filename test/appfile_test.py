@@ -36,7 +36,7 @@ def test_parse_faprotax_functions():
     from kb_faprotax.util.workflow import parse_faprotax_functions
 
     flnm = 'groups2records_dense.tsv'
-    flpth = os.path.join(TEST_DATA_DIR, 'by_dataset_input/refseq/return/FAPROTAX_output', flnm)
+    flpth = os.path.join(TEST_DATA_DIR, 'return/refseq/return/FAPROTAX_output', flnm)
     
     r2g_d = parse_faprotax_functions(flpth)
 
