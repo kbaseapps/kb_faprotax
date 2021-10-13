@@ -1,7 +1,7 @@
 import numpy as np
 import functools
 
-from .dprint import dprint
+from .debug import dprint
 
 
 

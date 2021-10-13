@@ -1,12 +1,15 @@
 import config
-from upa import *
+from upa import (
+    A_prok_genomes,
+    A_prok_genomes_dup,
+)
 
 
 class Test(config.BaseTest):
 
     def test_GenomeSet_input(self):
         ret = self.serviceImpl.run_FAPROTAX(
-            self.ctx, 
+            self.ctx,
             {
                 **self.ws,
                 'input_upa': A_prok_genomes,
@@ -15,13 +18,12 @@ class Test(config.BaseTest):
 
     def test_dup_GenomeSet(self):
         ret = self.serviceImpl.run_FAPROTAX(
-            self.ctx, 
+            self.ctx,
             {
                 **self.ws,
                 'input_upa': A_prok_genomes_dup,
             }
         )
-
 
     @classmethod
     def tearDownClass(cls):

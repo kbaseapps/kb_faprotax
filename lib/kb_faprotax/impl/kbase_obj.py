@@ -6,11 +6,11 @@ import numpy as np
 from urllib.parse import urlparse
 import json
 
-from .dprint import dprint
-from .varstash import Var
+from ..util.debug import dprint
+from ..util.varstash import Var
 from .error import *
-from .validate import Validate as vd
-from .file import get_numbered_duplicate
+from ..util.validate import Validate as vd
+from ..util.file import get_numbered_duplicate
 
 pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 20)

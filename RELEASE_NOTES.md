@@ -1,6 +1,6 @@
 # kb_faprotax release notes
 =========================================
 
-0.0.0
+0.0.1
 -----
-* Module created by kb-sdk init
+* Wrapping FAPROTAX 1.2.4

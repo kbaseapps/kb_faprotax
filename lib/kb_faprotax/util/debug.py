@@ -2,12 +2,11 @@ import functools
 import json as json_
 import subprocess
 import sys
-import os
 import inspect
 import time as _time
-import functools
 
-debug = True # toggle to turn off debug printing
+
+debug = True  # toggle to turn off debug printing
 
 subproc_run = functools.partial(
         subprocess.run, stdout=sys.stdout, stderr=sys.stderr, shell=True, executable='/bin/bash')
@@ -15,12 +14,13 @@ subproc_run = functools.partial(
 TAG_WIDTH = 80
 MAX_LINES = 15
 
-def dprint(*args, run='py', json=True, where=False, time=False, max_lines=MAX_LINES, exit=False, 
+
+def dprint(*args, run='py', json=True, where=False, time=False, max_lines=MAX_LINES, exit=False,
            subproc_run_kwargs={}, print_kwargs={}):
     '''Debug print'''
 
     if debug is not True:
-        return None # dprint can be expected to return retcode
+        return None  # dprint can be expected to return retcode
 
     print = functools.partial(__builtins__['print'], **print_kwargs)
 
@@ -38,7 +38,7 @@ def dprint(*args, run='py', json=True, where=False, time=False, max_lines=MAX_LI
     if where:
         stack = inspect.stack()
         print("(file `%s`)\n(func `%s`)\n(line `%d`)" % (stack[1][1], stack[1][3], stack[1][2]))
-    
+
     for arg in args:
         if time:
             t0 = _time.time()
@@ -60,12 +60,12 @@ def dprint(*args, run='py', json=True, where=False, time=False, max_lines=MAX_LI
         if time:
             t = _time.time() - t0
             print('[%fs]' % t)
-    
+
     print('-' * TAG_WIDTH)
 
     if exit:
         sys.exit(0)
-    
+
     # return last retcode
     if run in ['cli', 'shell']:
         return retcode

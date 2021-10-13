@@ -1,16 +1,11 @@
 import json
 
-from .dprint import dprint
-from .varstash import Var
-
-
-
+from ..util.debug import dprint
 
 
 #####
 #####
 class Params:
-
 
     DEFAULTS = {
     }
@@ -20,15 +15,13 @@ class Params:
         ## Validation
         self._validate(params)
 
-        
         ## Custom transformations to internal state ##
 
         if type(params.get('tax_field')) is list:
             params['tax_field'] = params['tax_field'][0]
-       
+
         ##
         self.params = params
-
 
     def _validate(self, params):
         '''
@@ -49,8 +42,6 @@ class Params:
             if p not in VALID:
                 raise Exception(p)
 
-
-
     def __getitem__(self, key):
         '''
         For required params (e.g., input UPAs, workspace stuff)
@@ -59,7 +50,6 @@ class Params:
         so use `getd` for those
         '''
         return self.params[key]
-
 
     def getd(self, key):
         '''
@@ -72,8 +62,5 @@ class Params:
 
         return self.params.get(key, self.DEFAULTS[key])
 
-
     def __repr__(self) -> str:
         return 'Wrapper for params:\n%s' % (json.dumps(self.params, indent=4))
-
-

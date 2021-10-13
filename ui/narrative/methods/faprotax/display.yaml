@@ -1,7 +1,7 @@
 #
 # define display information
 #
-name: Map Taxa to Functions using FAPROTAX - v1.2.1
+name: Map Taxa to Functions using FAPROTAX - v1.2.4
 subtitle : FAPROTAX is a database that maps prokaryotic clades (e.g. genera or species) to established metabolic or other ecologically relevant functions, using the current literature on cultured strains
 tooltip: FAPROTAX maps prokaryotic clades (e.g. genera or species) to metabolic or other ecologically relevant functions using literature on cultured strains
 
@@ -28,27 +28,24 @@ parameters :
         ui-name : |
             Input object
         short-hint : |
-            Object of type <code>AmpliconSet</code> or <code>GenomeSet</code><br><code>AmpliconMatrix</code> objects must reference a row <code>AttributeMapping</code> that has taxonomy
+            Object of type <code>AmpliconMatrix</code> or <code>GenomeSet</code><br>
+            <code>AmpliconMatrix</code> objects must reference a row <code>AttributeMapping</code> that has taxonomic assignments
             
+    # TODO this needs to be optional because of GenomeSet
     tax_field:
         ui-name: |
             Taxonomy field
         short-hint: |
-            Select the field from input AmpliconMatrix's row AttributeMapping corresponding to the taxonomy for FAPROTAX to run on
+            Select the field from input AmpliconMatrix's row AttributeMapping corresponding to the taxonomic assignments for FAPROTAX to run on
 
     output_amplicon_matrix_name:
         ui-name: |
             Output AmpliconMatrix name
         short-hint: |
             Output AmpliconMatrix name
+
 description : |
-
-    <!--------------------------------------------------------------------------------------------->
-    <h3>
-    App Behavior
-    </h3>
-
-
+    FAPROTAX is a database that maps prokaryotic clades (e.g. genera or species) to established metabolic or other ecologically relevant functions, using the current literature on cultured strains
 
 
     <!--------------------------------------------------------------------------------------------->

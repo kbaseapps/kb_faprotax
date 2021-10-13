@@ -10,8 +10,8 @@ _config = DotMap({
     'template_flpth': '/kb/module/ui/template/edge_data.tt',
 
 #----- run cmd
-    'db_flpth': '/kb/module/data/FAPROTAX.txt', # curated database file for FAPROTAX
-    'cmd_flpth': '/opt/FAPROTAX_1.2.1/collapse_table.py', # FAPROTAX executable
+    'db_flpth': '/opt/FAPROTAX_1.2.4/FAPROTAX.txt', # curated database file for FAPROTAX
+    'cmd_flpth': '/opt/FAPROTAX_1.2.4/collapse_table.py', # FAPROTAX executable
 
 
 

@@ -1,20 +1,21 @@
 import logging
 import os
 import sys
-import uuid
 import subprocess
-import functools
 import pandas as pd
 import numpy as np
 import json
 import shutil
 from dotmap import DotMap
 
-from .dprint import dprint
-from .varstash import Var
-from .error import *
-from .kbase_obj import AmpliconMatrix, AttributeMapping, GenomeSet, Genome
-
+from ..util.debug import dprint
+from ..util.varstash import Var
+from .error import (
+    NoWsReferenceException,
+    NonZeroReturnException,
+    NoTaxonomyException,
+)
+from .kbase_obj import AmpliconMatrix, AttributeMapping, GenomeSet
 
 
 ####################################################################################################
@@ -29,7 +30,6 @@ def run_check(cmd):
         msg = (
 "FAPROTAX command `%s` returned with non-zero return code `%d`. Please check logs for more details" % (cmd, completed_proc.returncode))
         raise NonZeroReturnException(msg)
-
 
 
 ####################################################################################################
@@ -54,10 +54,11 @@ def parse_faprotax_functions(groups2records_table_dense_flpth, dlm=',') -> dict:
 
     r2g_d = g2r_df.to_dict(orient='index')
     r2g_d = {record: r2g_d[record]['group'] for record in r2g_d}
-    if dlm != ',': 
+    if dlm != ',':
         r2g_d = {record: group.replace(',', dlm) for record, group in r2g_d.items()}
 
     return r2g_d
+
 
 ####################################################################################################
 def map_groups2records_to_groups2ids(groups2records_table_flpth, groups2ids_table_flpth, id_l):
@@ -71,10 +72,6 @@ def map_groups2records_to_groups2ids(groups2records_table_flpth, groups2ids_tabl
     df.to_csv(groups2ids_table_flpth, sep='\t', header=True, index=True)
 
 
-    
-
-
-
 ####################################################################################################
 ####################################################################################################
 ####################################################################################################
@@ -82,7 +79,6 @@ def map_groups2records_to_groups2ids(groups2records_table_flpth, groups2ids_tabl
 ####################################################################################################
 def do_AmpliconMatrix_workflow():
 
-    
     #
     ##
     ### kbase obj
@@ -127,14 +123,11 @@ def do_AmpliconMatrix_workflow():
     id_l = amp_mat.obj['data']['row_ids']
     tax_l = row_attr_map.get_ordered_tax_l(ind, id_l)
 
-
-
     #
     ##
     ### params
     ####
     #####
-
 
     log_flpth = os.path.join(Var.return_dir, 'log.txt')
     cmd_flpth = os.path.join(Var.return_dir, 'cmd.txt')
@@ -154,7 +147,6 @@ def do_AmpliconMatrix_workflow():
     groups2records_table_dense_flpth = os.path.join(Var.out_dir, 'groups2records_dense.tsv')
     group_overlaps_flpth = os.path.join(Var.out_dir, 'group_overlaps.tsv')
     group_definitions_used_flpth = os.path.join(Var.out_dir, 'group_definitions_used.txt')
-
 
     cmd = ' '.join([
         'set -o pipefail &&',
@@ -177,8 +169,6 @@ def do_AmpliconMatrix_workflow():
     with open(cmd_flpth, 'w') as f:
         f.write(cmd)
 
-
-
     #
     ##
     ### run
@@ -187,21 +177,17 @@ def do_AmpliconMatrix_workflow():
 
     run_check(cmd)
 
-
-
-
     #
     ##
     ### update AttributeMapping, AmpliconMatrix
     ####
     #####
 
-
     # generalized syntax for the nesting of parameterized attribute name strings?
     # Python syntax. escaping?
 
     attribute = 'FAPROTAX Functions (taxonomy=<%s>)' % Var.params['tax_field']
-    source = 'FAPROTAX'    
+    source = 'FAPROTAX'
 
     '''
     tax2groups = parse_tax2groups(groups2records_table_dense_flpth)
@@ -212,7 +198,7 @@ def do_AmpliconMatrix_workflow():
 
     # 99% sure FAPROTAX did not reorder the rows of OTU table
     # from running it and checking source code
-    if Var.debug: 
+    if Var.debug:
         assert tax_order == tax_l, '`%s`\n`%s`' % (tax_order, tax_l)
 
     ind, attribute = row_attr_map.add_attribute_slot(attribute, source)
@@ -225,15 +211,14 @@ def do_AmpliconMatrix_workflow():
 
     Var.objects_created = [
         {
-            'ref': row_attr_map_upa_new, 
+            'ref': row_attr_map_upa_new,
             'description': 'Added attribute `%s`' % attribute.replace('<', '&lt;').replace('>', '&gt;')
-        }, 
+        },
         {
-            'ref': amp_mat_upa_new, 
+            'ref': amp_mat_upa_new,
             'description': 'Updated row AttributeMapping reference to `%s`' % row_attr_map_upa_new
         },
     ]
-
 
     #
     ##
@@ -263,13 +248,12 @@ def do_AmpliconMatrix_workflow():
         dict(ref=func_prof_amplicon_upa, description='Amplicon functions')
     )
 
-
     ### Metagenome FP ###
 
     func_prof_sample_upa = Var.fpu.import_func_profile(dict(
         workspace_id=Var.params['workspace_id'],
         func_profile_obj_name='%s.collapsed_func_table' % amp_mat.name,
-        original_matrix_ref=amp_mat_upa_new, 
+        original_matrix_ref=amp_mat_upa_new,
         profile_file_path=collapsed_func_table_flpth,
         profile_type='mg',
         profile_category='community',
@@ -283,21 +267,17 @@ def do_AmpliconMatrix_workflow():
         dict(ref=func_prof_sample_upa, description='Sample functions')
     )
 
-
-
     #
     ##
-    ### return 
+    ### return
     ####
     #####
 
-
     file_links = [{
-        'path': Var.return_dir, 
+        'path': Var.return_dir,
         'name': 'faprotax_results.zip',
         'description': 'Input, output, logs to FAPROTAX run'
         }]
-
 
     params_report = {
         'warnings': Var.warnings,
@@ -319,20 +299,12 @@ def do_AmpliconMatrix_workflow():
     return output
 
 
-
-
-
-
-
-
 ####################################################################################################
 ####################################################################################################
 ####################################################################################################
 ####################################################################################################
 ####################################################################################################
 def do_GenomeSet_workflow():
-
-
 
     #
     ##
@@ -341,15 +313,12 @@ def do_GenomeSet_workflow():
     #####
 
     gs = GenomeSet(Var.params['input_upa'])
-    
-
 
     #
     ##
     ### params
     ####
     #####
-
 
     # the excess files are copied from Amplicon workflow
     # and not are not necessary
@@ -373,7 +342,6 @@ def do_GenomeSet_workflow():
     group_overlaps_flpth = os.path.join(Var.out_dir, 'group_overlaps.tsv')
     group_definitions_used_flpth = os.path.join(Var.out_dir, 'group_definitions_used.txt')
 
-
     cmd = ' '.join([
         'set -o pipefail &&',
         Var.cmd_flpth,
@@ -394,8 +362,6 @@ def do_GenomeSet_workflow():
     with open(cmd_flpth, 'w') as f:
         f.write(cmd)
 
-
-
     #
     ##
     ### cmd
@@ -404,24 +370,18 @@ def do_GenomeSet_workflow():
 
     run_check(cmd)
 
-
-
-
-
     #
     ##
     ### results
     ####
     #####
 
-
     tax2groups = parse_faprotax_functions(groups2records_table_dense_flpth, dlm=', ') # parse FAPROTAX results
 
     gs.df['functions'] = gs.df.apply(lambda row: tax2groups.get(row['taxonomy'], np.nan), axis=1) # stitch FAPROTAX results onto GenomeSet df
 
-
     dprint('gs.df', run=locals())
-    
+
     #
     ##
     ### prep df for DataTables
@@ -434,8 +394,6 @@ def do_GenomeSet_workflow():
     df.columns = ['Genome Workspace Name', 'Taxonomy', 'FAPROTAX Functions'] # capitalize properly
     columns = [{'title': col} for col in df.columns.tolist()] # format for DataTables
     lines = df.values.tolist() # format for DataTables
-    
-
 
     #
     ##
@@ -443,11 +401,10 @@ def do_GenomeSet_workflow():
     ####
     #####
 
-
     # prepare template
     template_flpth = os.path.join(Var.run_dir, os.path.basename(Var.template_flpth))
     shutil.copyfile(Var.template_flpth, template_flpth)
-   
+
     tmpl_data = {
             'page_title': 'FAPROTAX Functions for GenomeSet: %s' % gs.name,
             'data_array': lines,
@@ -463,14 +420,13 @@ def do_GenomeSet_workflow():
         'description': 'Table of Genomes with assigned FAPROTAX traits',
     }]
 
-
     report_output = Var.kbr.create_extended_report({
         'warnings': Var.warnings,
         'html_links': html_links,
         'direct_html_link_index': 0,
         'report_object_name': 'kb_faprotax_report',
         'workspace_id': Var.params['workspace_id'],
-           
+
     })
 
     output = {
@@ -479,8 +435,3 @@ def do_GenomeSet_workflow():
     }
 
     return output
-
-    
-
-
-

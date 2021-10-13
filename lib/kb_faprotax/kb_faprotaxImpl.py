@@ -16,10 +16,10 @@ from installed_clients.FunctionalProfileUtilClient import FunctionalProfileUtil
 from installed_clients.GenericsAPIClient import GenericsAPI
 
 
-from .util.kbase_obj import AmpliconMatrix, AttributeMapping
-from .util.dprint import dprint
+from .impl.kbase_obj import AmpliconMatrix, AttributeMapping
+from .util.debug import dprint
 from .util.varstash import Var, reset_Var # `Var` holds globals, `reset` clears everything but config stuff
-from .util.workflow import do_AmpliconMatrix_workflow, do_GenomeSet_workflow
+from .impl.workflow import do_AmpliconMatrix_workflow, do_GenomeSet_workflow
 from .util.params import Params
 
 
