@@ -1,14 +1,12 @@
-import re
 import os
 import logging
 import pandas as pd
 import numpy as np
 from urllib.parse import urlparse
-import json
 
 from ..util.debug import dprint
 from ..util.varstash import Var
-from .error import *
+from .error import ValidationException
 from ..util.validate import Validate as vd
 from ..util.file import get_numbered_duplicate
 
@@ -16,8 +14,6 @@ pd.set_option('display.max_rows', 100)
 pd.set_option('display.max_columns', 20)
 pd.set_option('display.width', 1000)
 pd.set_option('display.max_colwidth', 20)
-
-
 
 
 ####################################################################################################
@@ -35,7 +31,6 @@ class AmpliconMatrix:
 
         self._get_obj()
 
-
     def _get_obj(self):
         logging.info('Loading object info for AmpliconMatrix `%s`' % self.upa)
 
@@ -49,8 +44,6 @@ class AmpliconMatrix:
         # comment run_dir with AmpliconMatrix name
         if Var.debug and 'run_dir' in Var and os.path.exists(Var.run_dir):
             dprint('touch %s' % os.path.join(Var.run_dir, '#' + self.name), run='cli')
-        
-
 
     def to_OTU_table(self, tax_l, flpth=None):
         '''
@@ -68,19 +61,18 @@ class AmpliconMatrix:
         col_ids = self.obj['data']['col_ids']
 
         df = pd.DataFrame(
-            data, 
-            index=tax_l,#self.row_attr_map.get_tax_l(row_ids), 
+            data,
+            index=tax_l,  #self.row_attr_map.get_tax_l(row_ids),
             columns=col_ids
             )
         df.index.name = "taxonomy"
-        df['OTU_Id'] = row_ids # add OTU_Id for identification purposes (?)
-        df = df[['OTU_Id'] + col_ids] # reorder
+        df['OTU_Id'] = row_ids  # add OTU_Id for identification purposes (?)
+        df = df[['OTU_Id'] + col_ids]  # reorder
 
         if flpth is not None:
             df.to_csv(flpth, sep='\t')
 
         return df
-
 
     def validate_amplicon_abundance_data(self):
         '''
@@ -99,7 +91,7 @@ class AmpliconMatrix:
                 'Input AmpliconMatrix cannot be all missing values'
             )
 
-        a = vd.as_numeric(a, dtype=float) # casting as int will truncate floats into ints
+        a = vd.as_numeric(a, dtype=float)  # casting as int will truncate floats into ints
 
         base_msg = (
             'Input AmpliconMatrix must have count data (missing values allowed). '
@@ -112,7 +104,7 @@ class AmpliconMatrix:
             )
 
         # Gte 0
-        if np.any(np.round(a) < 0): # allow for small negative deltas
+        if np.any(np.round(a) < 0):  # allow for small negative deltas
             raise ValidationException(
                 base_msg + 'Negative value detected'
             )
@@ -138,9 +130,9 @@ class AmpliconMatrix:
         return id2attr
 
     def save(self):
-        
+
         upa_new = Var.gapi.save_object({
-            'obj_type': 'KBaseMatrices.AmpliconMatrix', # TODO version
+            'obj_type': 'KBaseMatrices.AmpliconMatrix',  # TODO version
             'obj_name': self.name,
             'data': self.obj,
             'workspace_id': Var.params['workspace_id'],
@@ -169,7 +161,6 @@ class AttributeMapping:
         self.upa = upa
         self.amp_mat = amp_mat
         self._get_obj()
-
 
     def _get_obj(self):
         logging.info('Loading object info for AttributeMapping `%s`' % self.upa)
@@ -205,7 +196,6 @@ class AttributeMapping:
 
         return None
 
-
     def get_ordered_tax_l(self, tax_ind, id_l):
         tax_l = []
 
@@ -215,7 +205,6 @@ class AttributeMapping:
             )
 
         return tax_l
-
 
     def map_update_attribute(self, ind: int, id2attr: dict):
         '''
@@ -227,12 +216,11 @@ class AttributeMapping:
         for id, attr in id2attr.items():
             self.obj['instances'][id][ind] = attr
 
-
     def add_attribute_slot(self, attribute, source) -> tuple:
         '''
         Return index and name
         '''
-        
+
         # get new name if it's a duplicate
         attributes = [d['attribute'] for d in self.obj['attributes']]
         if attribute in attributes:
@@ -264,7 +252,6 @@ class AttributeMapping:
 
         return upa_new
 
-
     def _check_attr_consistent(self, ind, attribute, source, id2attr):
         '''
         For testing purposes
@@ -272,14 +259,12 @@ class AttributeMapping:
 
         assert self.obj['attributes'][ind]['attribute'] == attribute
         assert self.obj['attributes'][ind]['source'] == source
-        
-    
+
         instances = self.obj['instances']
         for id, instance in instances.items():
             assert instance[ind] == id2attr.get(id)
 
         return True
-
 
 
 ####################################################################################################
@@ -301,7 +286,7 @@ class GenomeSet:
         obj = obj['data'][0]['data']
 
         self.description = obj['description']
-        
+
         genome_element_l = []
 
         # gather fields for each Genome
@@ -340,14 +325,14 @@ class GenomeSet:
                 oi_l.append(None)
             else:
                 assert False
-        
+
         # sanity check
         try:
             next(oi_gen)
             assert False
         except StopIteration:
             pass
-        except:
+        except Exception:
             assert False
 
         # make Genome
@@ -371,30 +356,20 @@ class GenomeSet:
 
         self.df = df
 
-
     def to_OTU_table(self, flpth, dummy_val=1.0):
         '''
         Write OTU table with dummy values
         `dummy_value` can be nonnegative number, or `'random'`
         '''
-        df = self.df.copy()[['taxonomy']] 
+        df = self.df.copy()[['taxonomy']]
         if dummy_val == 'random':
-            df['dummy_sample'] = np.random.random(len(df)) + 0.01 # unif[0.01, 1.01)
+            df['dummy_sample'] = np.random.random(len(df)) + 0.01  # unif[0.01, 1.01)
         elif dummy_val > 0:
             df['dummy_sample'] = [dummy_val] * len(df)
         else:
             raise Exception('`dummy_val` must be gt 0')
 
         df.to_csv(flpth, sep='\t', float_format='%.1f', index=False)
-        
-        '''
-        with open(flpth, 'w') as f: # TODO use `to_csv`?
-            f.write('OTU\tdummy_sample\n')
-            for index, row in self.df.iterrows():
-                f.write('%s\t1.0\n' % row['taxonomy'])
-        '''        
-            
-
 
 
 ####################################################################################################
@@ -419,19 +394,19 @@ class Genome:
         # Genome by upa
         if upa != None and oi != None:
             self.name = oi[1]
-            ver = oi[2].split('-')[-1] # depends on environment
+            ver = oi[2].split('-')[-1]  # depends on environment
             self.taxonomy = oi[-1].get('Taxonomy')
             self.sci_name = oi[-1]['Name']
             self.domain = oi[-1]['Domain']
 
         # Genome by embedded `data`
         # TODO improve
-        elif data != None and oi == None:
-            Var.warnings.append(\
+        elif data is not None and oi is None:
+            Var.warnings.append(
 "Genome is defined in GenomeSet rather than its own KBaseGenomes.Genome object.")
-            
+
             self.name = 'Unnamed'
-            ver = 'TODO' # depends on GenomeSet and environment
+            ver = 'TODO'  # depends on GenomeSet and environment
             self.taxonomy = data['taxonomy']
             self.sci_name = data['scientific_name']
             self.domain = data['domain']
@@ -444,6 +419,5 @@ class Genome:
         if self.upa == None:
             return None
         else:
-            parsed = urlparse(Var.kbase_endpoint) 
-            return '%s://%s/#dataview/%s' % (parsed.scheme, parsed.netloc, self.upa) 
-
+            parsed = urlparse(Var.kbase_endpoint)
+            return '%s://%s/#dataview/%s' % (parsed.scheme, parsed.netloc, self.upa)

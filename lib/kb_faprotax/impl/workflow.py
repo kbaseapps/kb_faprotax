@@ -33,31 +33,31 @@ def run_check(cmd):
 
 
 ####################################################################################################
-def parse_tax2groups(groups2records_table_dense_flpth, dlm=',') -> dict:
+def parse_tax_and_groups(groups2records_table_dense_flpth, dlm=',') -> dict:
     tax2groups_df = pd.read_csv(groups2records_table_dense_flpth, sep='\t', comment='#').fillna('')
     return tax2groups_df['record'].tolist(), tax2groups_df['group'].tolist()
 
 
 ####################################################################################################
-def parse_faprotax_functions(groups2records_table_dense_flpth, dlm=',') -> dict: # TODO does same thing as parse_tax2groups
+def parse_tax2groups(groups2records_table_dense_flpth, dlm=',') -> dict:
     '''
     In FAPROTAX, a taxonomic path is also known as a 'record', and a
     function is also known as a 'group'.
-    The input is a filepath for grouops2records_dense.tsv, which is one of
+    The input is a filepath for groups2records_dense.tsv, which is one of
     the outputs from FAPROTAX. Basically, its index is the records, its columns
     are the groups, and its values are nonnegative floats
     Input: filepath for groups2records_dense.tsv
     Output: dict map from taxonomy to predicted functions
     '''
-    g2r_df = pd.read_csv(groups2records_table_dense_flpth, sep='\t', comment='#')
-    g2r_df = g2r_df.fillna('').drop_duplicates().set_index('record')
+    tax2groups_df = pd.read_csv(groups2records_table_dense_flpth, sep='\t', index_col=0, comment='#')
+    tax2groups_df = tax2groups_df.fillna('').drop_duplicates()
 
-    r2g_d = g2r_df.to_dict(orient='index')
-    r2g_d = {record: r2g_d[record]['group'] for record in r2g_d}
+    tax2groups_d = tax2groups_df.to_dict(orient='index')
+    tax2groups_d = {record: tax2groups_d[record]['group'] for record in tax2groups_d}
     if dlm != ',':
-        r2g_d = {record: group.replace(',', dlm) for record, group in r2g_d.items()}
+        tax2groups_d = {record: group.replace(',', dlm) for record, group in tax2groups_d.items()}
 
-    return r2g_d
+    return tax2groups_d
 
 
 ####################################################################################################
@@ -111,7 +111,7 @@ def do_AmpliconMatrix_workflow():
     ####
     #####
 
-    ind = row_attr_map.get_attr_ind(Var.params['tax_field'] ) # find index of user-entered tax
+    ind = row_attr_map.get_attr_ind(Var.params['tax_field'])  # find index of user-entered tax
 
     if ind is None:
         raise NoTaxonomyException(
@@ -132,7 +132,7 @@ def do_AmpliconMatrix_workflow():
     log_flpth = os.path.join(Var.return_dir, 'log.txt')
     cmd_flpth = os.path.join(Var.return_dir, 'cmd.txt')
 
-    taxon_table_flpth = os.path.join(Var.return_dir, 'otu_table.tsv')
+    taxon_table_flpth = os.path.join(Var.return_dir, Var.TAX_TABLE_FN)
     amp_mat.to_OTU_table(tax_l, taxon_table_flpth)
 
     Var.out_dir = os.path.join(Var.return_dir, 'FAPROTAX_output')
@@ -141,10 +141,10 @@ def do_AmpliconMatrix_workflow():
     os.mkdir(Var.out_dir)
     os.mkdir(sub_tables_dir)
 
-    collapsed_func_table_flpth = os.path.join(Var.out_dir, 'collapsed_func_table.tsv')
+    collapsed_func_table_flpth = os.path.join(Var.out_dir, Var.COLLAPSED_FUNC_TABLE_FN)
     report_flpth = os.path.join(Var.out_dir, 'report.txt')
-    groups2records_table_flpth = os.path.join(Var.out_dir, 'groups2records.tsv')
-    groups2records_table_dense_flpth = os.path.join(Var.out_dir, 'groups2records_dense.tsv')
+    groups2records_table_flpth = os.path.join(Var.out_dir, Var.GROUPS2RECORDS_TABLE_FN)
+    groups2records_table_dense_flpth = os.path.join(Var.out_dir, Var.GROUPS2RECORDS_TABLE_DENSE_FN)
     group_overlaps_flpth = os.path.join(Var.out_dir, 'group_overlaps.tsv')
     group_definitions_used_flpth = os.path.join(Var.out_dir, 'group_definitions_used.txt')
 
@@ -161,7 +161,7 @@ def do_AmpliconMatrix_workflow():
         '--out_group_overlaps', group_overlaps_flpth,
         '--out_group_definitions_used', group_definitions_used_flpth,
         '--row_names_are_in_column', 'taxonomy',
-        '--omit_columns', '1', # amplicon ID column
+        '--omit_columns', '1',  # amplicon ID column
         '--verbose',
         '|& tee', log_flpth
         ])
@@ -189,11 +189,7 @@ def do_AmpliconMatrix_workflow():
     attribute = 'FAPROTAX Functions (taxonomy=<%s>)' % Var.params['tax_field']
     source = 'FAPROTAX'
 
-    '''
-    tax2groups = parse_tax2groups(groups2records_table_dense_flpth)
-    id2groups = {id: tax for id, (tax, groups) in zip(id_l, tax2groups.items())}
-    '''
-    tax_order, groups_l = parse_tax2groups(groups2records_table_dense_flpth)
+    tax_order, groups_l = parse_tax_and_groups(groups2records_table_dense_flpth)
     id2groups = {id: group for id, group in zip(id_l, groups_l)}
 
     # 99% sure FAPROTAX did not reorder the rows of OTU table
@@ -262,7 +258,6 @@ def do_AmpliconMatrix_workflow():
         description='Sample functional profile'
     ))['func_profile_ref']
 
-
     Var.objects_created.append(
         dict(ref=func_prof_sample_upa, description='Sample functions')
     )
@@ -287,7 +282,7 @@ def do_AmpliconMatrix_workflow():
         'workspace_id': Var.params['workspace_id'],
         }
 
-    Var.params_report = DotMap(params_report) # testing
+    Var.params_report = DotMap(params_report)  # testing
 
     report_output = Var.kbr.create_extended_report(params_report)
 
@@ -323,22 +318,22 @@ def do_GenomeSet_workflow():
     # the excess files are copied from Amplicon workflow
     # and not are not necessary
 
-    otu_table_flpth = os.path.join(Var.return_dir, 'otu_table.tsv')
+    otu_table_flpth = os.path.join(Var.return_dir, Var.TAX_TABLE_FN)
     gs.to_OTU_table(otu_table_flpth)
 
     log_flpth = os.path.join(Var.return_dir, 'log.txt')
     cmd_flpth = os.path.join(Var.return_dir, 'cmd.txt')
 
-    Var.out_dir = os.path.join(Var.return_dir, 'FAPROTAX_output') # for output files
+    Var.out_dir = os.path.join(Var.return_dir, 'FAPROTAX_output')  # for output files
     sub_tables_dir = os.path.join(Var.out_dir, 'sub_tables')
 
     os.mkdir(Var.out_dir)
     os.mkdir(sub_tables_dir)
 
-    collapsed_func_table_flpth = os.path.join(Var.out_dir, 'collapsed_func_table.tsv')
+    collapsed_func_table_flpth = os.path.join(Var.out_dir, Var.COLLAPSED_FUNC_TABLE_FN)
     report_flpth = os.path.join(Var.out_dir, 'report.txt')
-    groups2records_table_flpth = os.path.join(Var.out_dir, 'groups2records.tsv')
-    groups2records_table_dense_flpth = os.path.join(Var.out_dir, 'groups2records_dense.tsv')
+    groups2records_table_flpth = os.path.join(Var.out_dir, Var.GROUPS2RECORDS_TABLE_FN)
+    groups2records_table_dense_flpth = os.path.join(Var.out_dir, Var.GROUPS2RECORDS_TABLE_DENSE_FN)
     group_overlaps_flpth = os.path.join(Var.out_dir, 'group_overlaps.tsv')
     group_definitions_used_flpth = os.path.join(Var.out_dir, 'group_definitions_used.txt')
 
@@ -376,9 +371,9 @@ def do_GenomeSet_workflow():
     ####
     #####
 
-    tax2groups = parse_faprotax_functions(groups2records_table_dense_flpth, dlm=', ') # parse FAPROTAX results
+    tax2groups = parse_tax2groups(groups2records_table_dense_flpth, dlm=', ')  # parse FAPROTAX results
 
-    gs.df['functions'] = gs.df.apply(lambda row: tax2groups.get(row['taxonomy'], np.nan), axis=1) # stitch FAPROTAX results onto GenomeSet df
+    gs.df['functions'] = gs.df.apply(lambda row: tax2groups.get(row['taxonomy'], np.nan), axis=1)  # stitch FAPROTAX results onto GenomeSet df
 
     dprint('gs.df', run=locals())
 
@@ -389,11 +384,11 @@ def do_GenomeSet_workflow():
     #####
 
     df = gs.df
-    df['genome name'] = df.apply(lambda row: '<a href="%s" target="_blank">%s</a>' % (row['url'], row['name']), axis=1) # add column of Genome name linking to landing page
-    df = df[['genome name', 'taxonomy', 'functions']] # filter to final columns
-    df.columns = ['Genome Workspace Name', 'Taxonomy', 'FAPROTAX Functions'] # capitalize properly
-    columns = [{'title': col} for col in df.columns.tolist()] # format for DataTables
-    lines = df.values.tolist() # format for DataTables
+    df['genome name'] = df.apply(lambda row: '<a href="%s" target="_blank">%s</a>' % (row['url'], row['name']), axis=1)  # add column of Genome name linking to landing page
+    df = df[['genome name', 'taxonomy', 'functions']]  # filter to final columns
+    df.columns = ['Genome Workspace Name', 'Taxonomy', 'FAPROTAX Functions']  # capitalize properly
+    columns = [{'title': col} for col in df.columns.tolist()]  # format for DataTables
+    lines = df.values.tolist()  # format for DataTables
 
     #
     ##

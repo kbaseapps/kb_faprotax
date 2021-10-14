@@ -12,8 +12,8 @@ from kb_faprotax.kb_faprotaxImpl import kb_faprotax
 
 
 ######################################
-do_patch = False
-if do_patch:
+DO_PATCH = False
+if DO_PATCH:
     patch_ = patch
     patch_dict_ = patch.dict
 else:
