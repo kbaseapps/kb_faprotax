@@ -85,9 +85,9 @@ class kb_faprotax:
             #---
             'ws': Workspace(self.workspace_url),
             'dfu': DataFileUtil(self.callback_url), # instantiate here so within runtime of @patch
-            'kbr': KBaseReport(self.callback_url, service_ver='dev'), # instantiate here so within runtime of @patch 
-            'gapi': GenericsAPI(self.callback_url, service_ver='dev'),
-            'fpu': FunctionalProfileUtil(self.callback_url, service_ver='dev'), # TODO overhead?
+            'kbr': KBaseReport(self.callback_url), # instantiate here so within runtime of @patch 
+            'gapi': GenericsAPI(self.callback_url),
+            'fpu': FunctionalProfileUtil(self.callback_url, service_ver='beta'), # TODO overhead?
             #---
             'warnings': [],
             #---

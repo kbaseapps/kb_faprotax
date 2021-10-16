@@ -24,7 +24,7 @@ class GenericsAPI(object):
             password=None, token=None, ignore_authrc=False,
             trust_all_ssl_certificates=False,
             auth_svc='https://ci.kbase.us/services/auth/api/legacy/KBase/Sessions/Login',
-            service_ver='dev',
+            service_ver='release',
             async_job_check_time_ms=100, async_job_check_time_scale_percent=150, 
             async_job_check_max_time_ms=300000):
         if url is None:
@@ -111,19 +111,19 @@ class GenericsAPI(object):
            reference) -> structure: parameter "obj_type" of String, parameter
            "input_shock_id" of String, parameter "input_file_path" of String,
            parameter "input_staging_file_path" of String, parameter
-           "matrix_name" of String, parameter "amplicon_set_name" of String,
-           parameter "scale" of String, parameter "description" of String,
-           parameter "workspace_name" of type "workspace_name" (workspace
-           name of the object), parameter "genome_ref" of type "obj_ref" (An
-           X/Y/Z style reference), parameter "col_attributemapping_ref" of
-           type "obj_ref" (An X/Y/Z style reference), parameter
-           "row_attributemapping_ref" of type "obj_ref" (An X/Y/Z style
-           reference), parameter "diff_expr_matrix_ref" of type "obj_ref" (An
-           X/Y/Z style reference), parameter "biochemistry_ref" of type
-           "obj_ref" (An X/Y/Z style reference), parameter "reads_set_ref" of
-           type "obj_ref" (An X/Y/Z style reference), parameter
-           "sample_set_ref" of type "obj_ref" (An X/Y/Z style reference),
-           parameter "unit" of String, parameter "type" of String
+           "matrix_name" of String, parameter "scale" of String, parameter
+           "description" of String, parameter "workspace_name" of type
+           "workspace_name" (workspace name of the object), parameter
+           "genome_ref" of type "obj_ref" (An X/Y/Z style reference),
+           parameter "col_attributemapping_ref" of type "obj_ref" (An X/Y/Z
+           style reference), parameter "row_attributemapping_ref" of type
+           "obj_ref" (An X/Y/Z style reference), parameter
+           "diff_expr_matrix_ref" of type "obj_ref" (An X/Y/Z style
+           reference), parameter "biochemistry_ref" of type "obj_ref" (An
+           X/Y/Z style reference), parameter "reads_set_ref" of type
+           "obj_ref" (An X/Y/Z style reference), parameter "sample_set_ref"
+           of type "obj_ref" (An X/Y/Z style reference), parameter "unit" of
+           String, parameter "type" of String
         :returns: instance of type "ImportMatrixOutput" -> structure:
            parameter "report_name" of String, parameter "report_ref" of
            String, parameter "matrix_obj_ref" of type "obj_ref" (An X/Y/Z
@@ -472,16 +472,6 @@ class GenericsAPI(object):
            "shock_id" of String
         """
         return self._client.run_job('GenericsAPI.export_pca_matrix_excel',
-                                    [params], self._service_ver, context)
-
-    def export_amplicon_set_tsv(self, params, context=None):
-        """
-        :param params: instance of type "ExportObjectParams" -> structure:
-           parameter "input_ref" of type "obj_ref" (An X/Y/Z style reference)
-        :returns: instance of type "ExportOutput" -> structure: parameter
-           "shock_id" of String
-        """
-        return self._client.run_job('GenericsAPI.export_amplicon_set_tsv',
                                     [params], self._service_ver, context)
 
     def compute_correlation_matrix(self, params, context=None):
