@@ -41,9 +41,9 @@ class kb_faprotax:
     # state. A method could easily clobber the state set by another while
     # the latter method is running.
     ######################################### noqa
-    VERSION = "0.0.1"
-    GIT_URL = "https://github.com/n1mus/kb_faprotax"
-    GIT_COMMIT_HASH = "24efa7938f23c8343cac4a8accc754e2e625165b"
+    VERSION = "1.0.0"
+    GIT_URL = "https://github.com/kbaseapps/kb_faprotax"
+    GIT_COMMIT_HASH = "51052ac7907f72c0d3c06313dcae52efb9a36056"
 
     #BEGIN_CLASS_HEADER
     #END_CLASS_HEADER
