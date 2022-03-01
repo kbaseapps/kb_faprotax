@@ -8,9 +8,7 @@ module kb_faprotax {
         string report_ref;
     } ReportResults;
 
-    /*
-        This example function accepts any number of parameters and returns results in a KBaseReport
-    */
-    funcdef run_FAPROTAX(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;
+    funcdef run_amplicon_workflow(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;
 
+    funcdef run_genome_workflow(mapping<string,UnspecifiedObject> params) returns (ReportResults output) authentication required;
 };

@@ -40,7 +40,7 @@ class TestCase(cfg.BaseTest):
     )
     @patch_("kb_faprotax.kb_faprotaxImpl.KBaseReport", new=lambda *a, **k: mock_kbr)
     def test_tax_field(self):
-        ret = self.serviceImpl.run_FAPROTAX(
+        ret = self.serviceImpl.run_amplicon_workflow(
             self.ctx,
             {
                 **self.ws,
@@ -70,7 +70,7 @@ class TestCase(cfg.BaseTest):
     )
     @patch_("kb_faprotax.kb_faprotaxImpl.KBaseReport", new=lambda *a, **k: mock_kbr)
     def test(self):
-        ret = self.serviceImpl.run_FAPROTAX(
+        ret = self.serviceImpl.run_amplicon_workflow(
             self.ctx,
             {
                 **self.ws,
@@ -102,7 +102,7 @@ class TestCase(cfg.BaseTest):
     )
     @patch_("kb_faprotax.kb_faprotaxImpl.KBaseReport", new=lambda *a, **k: mock_kbr)
     def test_against_reference(self):  # TODO
-        ret = self.serviceImpl.run_FAPROTAX(
+        ret = self.serviceImpl.run_amplicon_workflow(
             self.ctx,
             {
                 **self.ws,
@@ -124,11 +124,12 @@ class TestCase(cfg.BaseTest):
     @patch_("kb_faprotax.kb_faprotaxImpl.DataFileUtil", new=lambda *a: mock_dfu)
     def test_noRowAttributeMapping(self):
         with raises(NoWsReferenceException):
-            ret = self.serviceImpl.run_FAPROTAX(
+            ret = self.serviceImpl.run_amplicon_workflow(
                 self.ctx,
                 {
                     **self.ws,
                     "input_upa": enigma50by30_noAttrMaps,
+                    "tax_field": "nonsense",
                 },
             )
 

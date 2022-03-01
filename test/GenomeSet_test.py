@@ -7,7 +7,7 @@ from upa import (
 
 class Test(config.BaseTest):
     def test_GenomeSet_input(self):
-        ret = self.serviceImpl.run_FAPROTAX(
+        ret = self.serviceImpl.run_genome_workflow(
             self.ctx,
             {
                 **self.ws,
@@ -16,7 +16,7 @@ class Test(config.BaseTest):
         )
 
     def test_dup_GenomeSet(self):
-        ret = self.serviceImpl.run_FAPROTAX(
+        ret = self.serviceImpl.run_genome_workflow(
             self.ctx,
             {
                 **self.ws,

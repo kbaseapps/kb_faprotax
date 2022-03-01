@@ -36,6 +36,7 @@ class AmpliconMatrix:
         obj = Var.dfu.get_objects({"object_refs": [self.upa]})
 
         self.name = obj["data"][0]["info"][1]
+        self.versioned_type = obj["data"][0]["info"][2]
         self.obj = obj["data"][0]["data"]
 
         # comment run_dir with AmpliconMatrix name
@@ -125,7 +126,7 @@ class AmpliconMatrix:
 
         upa_new = Var.gapi.save_object(
             {
-                "obj_type": "KBaseMatrices.AmpliconMatrix",  # TODO version
+                "obj_type": self.versioned_type,
                 "obj_name": self.name,
                 "data": self.obj,
                 "workspace_id": Var.params["workspace_id"],

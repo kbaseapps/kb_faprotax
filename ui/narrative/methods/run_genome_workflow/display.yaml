@@ -1,0 +1,66 @@
+#
+# define display information
+#
+name: Map Taxa to Functions using FAPROTAX - v1.2.4
+subtitle : FAPROTAX is a database that maps prokaryotic clades (e.g. genera or species) to established metabolic or other ecologically relevant functions, using the current literature on cultured strains
+tooltip: FAPROTAX maps prokaryotic clades (e.g. genera or species) to metabolic or other ecologically relevant functions using literature on cultured strains
+
+screenshots: [FAPROTAX_schematic.jpg,FAPROTAX_usage_overview.jpg,heatmap.jpg,bubbleplot.jpg]
+
+icon: faprotax.png
+
+#
+# define a set of similar apps that might be useful to the user
+#
+suggestions:
+    apps:
+        related:
+            [app1, app2]
+        next:
+            [app3, app4]
+
+#
+# Configure the display and description of parameters
+#
+
+parameters :
+    input_upa :
+        ui-name : |
+            Input object
+        short-hint : |
+            Object of type <code>AmpliconMatrix</code> or <code>GenomeSet</code><br>
+            <code>AmpliconMatrix</code> objects must reference a row <code>AttributeMapping</code> that has taxonomic assignments
+            
+    # TODO this needs to be optional because of GenomeSet
+    tax_field:
+        ui-name: |
+            Taxonomy field
+        short-hint: |
+            Select the field from input AmpliconMatrix's row AttributeMapping corresponding to the taxonomic assignments for FAPROTAX to run on
+
+    output_amplicon_matrix_name:
+        ui-name: |
+            Output AmpliconMatrix name
+        short-hint: |
+            Output AmpliconMatrix name
+
+description : |
+    FAPROTAX is a database that maps prokaryotic clades (e.g. genera or species) to established metabolic or other ecologically relevant functions, using the current literature on cultured strains
+
+
+    <!--------------------------------------------------------------------------------------------->
+    <h3>
+    Resources
+    </h3>
+
+    <a href="http://www.loucalab.com/archive/FAPROTAX/lib/php/index.php?section=Instructions">FAPROTAX usage</a>
+
+    <br><br>
+
+publications:
+    -
+        pmid : 27634532
+        display-text : |
+             Louca S, Parfrey LW, Doebeli M. Decoupling function and taxonomy in the global ocean microbiome. Science. 2016;353: 1272-1277. doi:10.1126/science.aaf4507
+        link: https://doi.org/10.1126/science.aaf4507
+

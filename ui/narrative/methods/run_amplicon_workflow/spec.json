@@ -4,8 +4,8 @@
         "swwang",
         "seanjungbluth"
     ],
-    "contact": "",
-    "categories": ["active"],
+    "contact": "http://kbase.us/contact-us/",
+    "categories": ["active", "commmunities", "annotation"],
     "widgets": {
         "input": null,
         "output": "no-display"
@@ -19,7 +19,7 @@
             "default_values": [ "" ],
             "field_type": "text",
             "text_options": {
-                "valid_ws_types": ["KBaseMatrices.AmpliconMatrix", "KBaseSearch.GenomeSet"]
+                "valid_ws_types": ["KBaseMatrices.AmpliconMatrix"]
             }
         },{
             "id": "tax_field",
@@ -68,7 +68,7 @@
         "service-mapping": {
             "url": "",
             "name": "kb_faprotax",
-            "method": "run_FAPROTAX",
+            "method": "run_amplicon_workflow",
             "input_mapping": [
                 {
                     "narrative_system_variable": "workspace",
